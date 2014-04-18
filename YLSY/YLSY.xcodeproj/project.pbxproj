@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5083B9B1900C3C2001083E0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D5083B9A1900C3C2001083E0 /* Reachability.m */; };
 		D52D5CA418FE34C700B8C6B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D5CA318FE34C700B8C6B8 /* Foundation.framework */; };
 		D52D5CA618FE34C700B8C6B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D5CA518FE34C700B8C6B8 /* CoreGraphics.framework */; };
 		D52D5CA818FE34C700B8C6B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D5CA718FE34C700B8C6B8 /* UIKit.framework */; };
@@ -98,6 +99,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5083B991900C3C2001083E0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D5083B9A1900C3C2001083E0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D52D5CA018FE34C700B8C6B8 /* YLSY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLSY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52D5CA318FE34C700B8C6B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D52D5CA518FE34C700B8C6B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -257,6 +260,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5083B981900C3C2001083E0 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				D5083B991900C3C2001083E0 /* Reachability.h */,
+				D5083B9A1900C3C2001083E0 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		D52D5C9718FE34C700B8C6B8 = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +358,7 @@
 		D52D5CD818FE5A8600B8C6B8 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				D5083B981900C3C2001083E0 /* Reachability */,
 				D530679F18FE9244003D84ED /* ZipArchive */,
 				D52D5CD918FE5A8600B8C6B8 /* AFNetworking */,
 				D52D5CDA18FE5A8600B8C6B8 /* FMDB */,
@@ -681,6 +694,7 @@
 				D52D5D7F18FE64E700B8C6B8 /* JSONModelError.m in Sources */,
 				D53067B018FE9263003D84ED /* ZipArchive.m in Sources */,
 				D52D5CF318FE5AA100B8C6B8 /* AFHTTPSessionManager.m in Sources */,
+				D5083B9B1900C3C2001083E0 /* Reachability.m in Sources */,
 				D52D5CF718FE5AA100B8C6B8 /* AFURLRequestSerialization.m in Sources */,
 				D52D5D7E18FE64E700B8C6B8 /* JSONModelClassProperty.m in Sources */,
 				D52D5D8118FE64E700B8C6B8 /* JSONAPI.m in Sources */,
