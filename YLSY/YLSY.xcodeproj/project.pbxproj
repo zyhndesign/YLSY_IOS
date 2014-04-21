@@ -20,6 +20,7 @@
 		D52D5CC318FE34C700B8C6B8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D5CC218FE34C700B8C6B8 /* XCTest.framework */; };
 		D52D5CC418FE34C700B8C6B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D5CA318FE34C700B8C6B8 /* Foundation.framework */; };
 		D52D5CC518FE34C700B8C6B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D5CA718FE34C700B8C6B8 /* UIKit.framework */; };
+		D52D5CCD18FE34C700B8C6B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D52D5CCB18FE34C700B8C6B8 /* InfoPlist.strings */; };
 		D52D5CCF18FE34C700B8C6B8 /* YLSYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D5CCE18FE34C700B8C6B8 /* YLSYTests.m */; };
 		D52D5CF118FE5AA100B8C6B8 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D5CDF18FE5AA100B8C6B8 /* AFHTTPRequestOperation.m */; };
 		D52D5CF218FE5AA100B8C6B8 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D5CE118FE5AA100B8C6B8 /* AFHTTPRequestOperationManager.m */; };
@@ -104,6 +105,8 @@
 		D52D5CA318FE34C700B8C6B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D52D5CA518FE34C700B8C6B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D52D5CA718FE34C700B8C6B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D52D5CAB18FE34C700B8C6B8 /* YLSY-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLSY-Info.plist"; sourceTree = "<group>"; };
+		D52D5CAD18FE34C700B8C6B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D52D5CAF18FE34C700B8C6B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D52D5CB118FE34C700B8C6B8 /* YLSY-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLSY-Prefix.pch"; sourceTree = "<group>"; };
 		D52D5CB218FE34C700B8C6B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		D52D5CC118FE34C700B8C6B8 /* YLSYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLSYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52D5CC218FE34C700B8C6B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D52D5CCA18FE34C700B8C6B8 /* YLSYTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLSYTests-Info.plist"; sourceTree = "<group>"; };
+		D52D5CCC18FE34C700B8C6B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D52D5CCE18FE34C700B8C6B8 /* YLSYTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSYTests.m; sourceTree = "<group>"; };
 		D52D5CDE18FE5AA100B8C6B8 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		D52D5CDF18FE5AA100B8C6B8 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -222,10 +226,6 @@
 		D565F24918FE8FD1009710AF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D59DAEC618FE8EE800B06DD8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D59DAEC818FE8F2300B06DD8 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		D5E1C32B1904B00A0019E05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D5E1C32C1904B3240019E05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = "Base.lproj/YLSY-Info.plist"; sourceTree = "<group>"; };
-		D5E1C3381904B8770019E05B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		D5E1C3391904B8880019E05B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/YLSY-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,7 +329,7 @@
 		D52D5CAA18FE34C700B8C6B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5E1C32D1904B3240019E05B /* YLSY-Info.plist */,
+				D52D5CAB18FE34C700B8C6B8 /* YLSY-Info.plist */,
 				D52D5CAC18FE34C700B8C6B8 /* InfoPlist.strings */,
 				D52D5CAF18FE34C700B8C6B8 /* main.m */,
 				D52D5CB118FE34C700B8C6B8 /* YLSY-Prefix.pch */,
@@ -350,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				D52D5CCA18FE34C700B8C6B8 /* YLSYTests-Info.plist */,
+				D52D5CCB18FE34C700B8C6B8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -606,7 +607,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 			);
 			mainGroup = D52D5C9718FE34C700B8C6B8;
 			productRefGroup = D52D5CA118FE34C700B8C6B8 /* Products */;
@@ -659,6 +659,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52D5CCD18FE34C700B8C6B8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +730,7 @@
 		D52D5CAC18FE34C700B8C6B8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5E1C32B1904B00A0019E05B /* Base */,
+				D52D5CAD18FE34C700B8C6B8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -738,18 +739,16 @@
 			isa = PBXVariantGroup;
 			children = (
 				D52D5CB618FE34C700B8C6B8 /* Base */,
-				D5E1C3381904B8770019E05B /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D5E1C32D1904B3240019E05B /* YLSY-Info.plist */ = {
+		D52D5CCB18FE34C700B8C6B8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5E1C32C1904B3240019E05B /* Base */,
-				D5E1C3391904B8880019E05B /* en */,
+				D52D5CCC18FE34C700B8C6B8 /* en */,
 			);
-			name = "YLSY-Info.plist";
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -834,7 +833,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YLSY/YLSY-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/YLSYTests/YLSYTests-Info.plist";
+				INFOPLIST_FILE = "YLSY/YLSY-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -852,7 +851,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YLSY/YLSY-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/YLSYTests/YLSYTests-Info.plist";
+				INFOPLIST_FILE = "YLSY/YLSY-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
