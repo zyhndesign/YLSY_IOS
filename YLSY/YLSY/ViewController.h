@@ -10,5 +10,21 @@
 #import "GAITrackedViewController.h"
 
 @interface ViewController : GAITrackedViewController
+{
+    IBOutlet UIButton *btnHistory;
+    
+    IBOutlet UIButton *btnLandscape;
+    
+    IBOutlet UIButton *btnHumanity;
+    
+    IBOutlet UIButton *btnStory;
+    
+    IBOutlet UIImageView *imgAppLogo;
+}
 
+@property (nonatomic,strong) IBOutlet UIButton *btnHistory;
+@property (nonatomic,strong) IBOutlet UIButton *btnLandscape;
+@property (nonatomic,strong) IBOutlet UIButton *btnHumanity;
+@property (nonatomic,strong) IBOutlet UIButton *btnStory;
+@property (nonatomic,strong) IBOutlet UIImageView *imgAppLogo;
 @end

@@ -86,6 +86,7 @@
 		D565F24A18FE8FD1009710AF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D565F24918FE8FD1009710AF /* libsqlite3.0.dylib */; };
 		D59DAEC718FE8EE800B06DD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59DAEC618FE8EE800B06DD8 /* AudioToolbox.framework */; };
 		D59DAEC918FE8F2300B06DD8 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D59DAEC818FE8F2300B06DD8 /* libz.1.2.5.dylib */; };
+		D5E1C33D1904CC660019E05B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5E1C33F1904CC660019E05B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,9 @@
 		D565F24918FE8FD1009710AF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D59DAEC618FE8EE800B06DD8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D59DAEC818FE8F2300B06DD8 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		D5E1C33A1904BF2A0019E05B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D5E1C33E1904CC660019E05B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D5E1C3401904CC6D0019E05B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +333,7 @@
 		D52D5CAA18FE34C700B8C6B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D5E1C33F1904CC660019E05B /* Localizable.strings */,
 				D52D5CAB18FE34C700B8C6B8 /* YLSY-Info.plist */,
 				D52D5CAC18FE34C700B8C6B8 /* InfoPlist.strings */,
 				D52D5CAF18FE34C700B8C6B8 /* main.m */,
@@ -607,6 +612,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D52D5C9718FE34C700B8C6B8;
 			productRefGroup = D52D5CA118FE34C700B8C6B8 /* Products */;
@@ -646,6 +652,7 @@
 				D52D5DA918FE689C00B8C6B8 /* pic7.png in Resources */,
 				D52D5DA618FE689C00B8C6B8 /* pic4.png in Resources */,
 				D52D5DA518FE689C00B8C6B8 /* pic3.png in Resources */,
+				D5E1C33D1904CC660019E05B /* Localizable.strings in Resources */,
 				D52D5DA118FE689C00B8C6B8 /* humanitybackground.jpg in Resources */,
 				D52D5DB118FE689C00B8C6B8 /* pic16.png in Resources */,
 				D52D5DB218FE689C00B8C6B8 /* pic17.png in Resources */,
@@ -731,6 +738,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D52D5CAD18FE34C700B8C6B8 /* en */,
+				D5E1C33A1904BF2A0019E05B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -749,6 +757,16 @@
 				D52D5CCC18FE34C700B8C6B8 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5E1C33F1904CC660019E05B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5E1C33E1904CC660019E05B /* zh-Hans */,
+				D5E1C3401904CC6D0019E05B /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
