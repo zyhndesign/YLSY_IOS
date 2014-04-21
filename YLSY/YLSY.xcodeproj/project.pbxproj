@@ -91,6 +91,12 @@
 		D5E1C34A1904D6180019E05B /* Landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E1C3491904D6180019E05B /* Landscape.xib */; };
 		D5E1C34C1904D6290019E05B /* Humanity.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E1C34B1904D6290019E05B /* Humanity.xib */; };
 		D5E1C34E1904D6370019E05B /* Story.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E1C34D1904D6370019E05B /* Story.xib */; };
+		D5E1C3501904F1A60019E05B /* Footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E1C34F1904F1A60019E05B /* Footer.xib */; };
+		D5E1C3541904F60C0019E05B /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C3531904F60C0019E05B /* HistoryViewController.m */; };
+		D5E1C3571904F6210019E05B /* LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C3561904F6210019E05B /* LandscapeViewController.m */; };
+		D5E1C35A1904F6340019E05B /* HumanityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C3591904F6340019E05B /* HumanityViewController.m */; };
+		D5E1C35D1904F6470019E05B /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C35C1904F6470019E05B /* StoryViewController.m */; };
+		D5E1C3601904F6580019E05B /* FooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C35F1904F6580019E05B /* FooterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +244,17 @@
 		D5E1C3491904D6180019E05B /* Landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Landscape.xib; sourceTree = "<group>"; };
 		D5E1C34B1904D6290019E05B /* Humanity.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Humanity.xib; sourceTree = "<group>"; };
 		D5E1C34D1904D6370019E05B /* Story.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Story.xib; sourceTree = "<group>"; };
+		D5E1C34F1904F1A60019E05B /* Footer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Footer.xib; sourceTree = "<group>"; };
+		D5E1C3521904F60C0019E05B /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		D5E1C3531904F60C0019E05B /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		D5E1C3551904F6210019E05B /* LandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeViewController.h; sourceTree = "<group>"; };
+		D5E1C3561904F6210019E05B /* LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeViewController.m; sourceTree = "<group>"; };
+		D5E1C3581904F6340019E05B /* HumanityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanityViewController.h; sourceTree = "<group>"; };
+		D5E1C3591904F6340019E05B /* HumanityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanityViewController.m; sourceTree = "<group>"; };
+		D5E1C35B1904F6470019E05B /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		D5E1C35C1904F6470019E05B /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		D5E1C35E1904F6580019E05B /* FooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterViewController.h; sourceTree = "<group>"; };
+		D5E1C35F1904F6580019E05B /* FooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +340,7 @@
 		D52D5CA918FE34C700B8C6B8 /* YLSY */ = {
 			isa = PBXGroup;
 			children = (
+				D5E1C3511904F5840019E05B /* controllers */,
 				D5E1C3441904D2170019E05B /* xibs */,
 				D52D5D8618FE683B00B8C6B8 /* images */,
 				D52D5CD818FE5A8600B8C6B8 /* libs */,
@@ -566,8 +584,26 @@
 				D5E1C3491904D6180019E05B /* Landscape.xib */,
 				D5E1C34B1904D6290019E05B /* Humanity.xib */,
 				D5E1C34D1904D6370019E05B /* Story.xib */,
+				D5E1C34F1904F1A60019E05B /* Footer.xib */,
 			);
 			path = xibs;
+			sourceTree = "<group>";
+		};
+		D5E1C3511904F5840019E05B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E1C3521904F60C0019E05B /* HistoryViewController.h */,
+				D5E1C3531904F60C0019E05B /* HistoryViewController.m */,
+				D5E1C3551904F6210019E05B /* LandscapeViewController.h */,
+				D5E1C3561904F6210019E05B /* LandscapeViewController.m */,
+				D5E1C3581904F6340019E05B /* HumanityViewController.h */,
+				D5E1C3591904F6340019E05B /* HumanityViewController.m */,
+				D5E1C35B1904F6470019E05B /* StoryViewController.h */,
+				D5E1C35C1904F6470019E05B /* StoryViewController.m */,
+				D5E1C35E1904F6580019E05B /* FooterViewController.h */,
+				D5E1C35F1904F6580019E05B /* FooterViewController.m */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -672,6 +708,7 @@
 				D52D5CAE18FE34C700B8C6B8 /* InfoPlist.strings in Resources */,
 				D52D5DB318FE689C00B8C6B8 /* pic18.png in Resources */,
 				D52D5DAA18FE689C00B8C6B8 /* pic8.png in Resources */,
+				D5E1C3501904F1A60019E05B /* Footer.xib in Resources */,
 				D52D5DA818FE689C00B8C6B8 /* pic6.png in Resources */,
 				D52D5DA918FE689C00B8C6B8 /* pic7.png in Resources */,
 				D52D5DA618FE689C00B8C6B8 /* pic4.png in Resources */,
@@ -703,6 +740,8 @@
 			files = (
 				D53067AF18FE9263003D84ED /* zip.c in Sources */,
 				D52D5D7B18FE64E700B8C6B8 /* JSONModel+CoreData.m in Sources */,
+				D5E1C35D1904F6470019E05B /* StoryViewController.m in Sources */,
+				D5E1C3571904F6210019E05B /* LandscapeViewController.m in Sources */,
 				D52D5CF118FE5AA100B8C6B8 /* AFHTTPRequestOperation.m in Sources */,
 				D52D5D8418FE64E700B8C6B8 /* JSONKeyMapper.m in Sources */,
 				D52D5CBA18FE34C700B8C6B8 /* ViewController.m in Sources */,
@@ -712,6 +751,7 @@
 				D52D5CF418FE5AA100B8C6B8 /* AFNetworkReachabilityManager.m in Sources */,
 				D52D5D8218FE64E700B8C6B8 /* JSONHTTPClient.m in Sources */,
 				D52D5D8518FE64E700B8C6B8 /* JSONValueTransformer.m in Sources */,
+				D5E1C3541904F60C0019E05B /* HistoryViewController.m in Sources */,
 				D52D5D1618FE615300B8C6B8 /* FMDatabaseAdditions.m in Sources */,
 				D52D5CF818FE5AA100B8C6B8 /* AFURLResponseSerialization.m in Sources */,
 				D52D5D8018FE64E700B8C6B8 /* NSArray+JSONModel.m in Sources */,
@@ -721,6 +761,7 @@
 				D52D5CF618FE5AA100B8C6B8 /* AFURLConnectionOperation.m in Sources */,
 				D52D5D1818FE615300B8C6B8 /* FMDatabaseQueue.m in Sources */,
 				D52D5D8318FE64E700B8C6B8 /* JSONModel+networking.m in Sources */,
+				D5E1C3601904F6580019E05B /* FooterViewController.m in Sources */,
 				D52D5CF518FE5AA100B8C6B8 /* AFSecurityPolicy.m in Sources */,
 				D52D5D7F18FE64E700B8C6B8 /* JSONModelError.m in Sources */,
 				D53067B018FE9263003D84ED /* ZipArchive.m in Sources */,
@@ -728,6 +769,7 @@
 				D5083B9B1900C3C2001083E0 /* Reachability.m in Sources */,
 				D52D5CF718FE5AA100B8C6B8 /* AFURLRequestSerialization.m in Sources */,
 				D52D5D7E18FE64E700B8C6B8 /* JSONModelClassProperty.m in Sources */,
+				D5E1C35A1904F6340019E05B /* HumanityViewController.m in Sources */,
 				D52D5D8118FE64E700B8C6B8 /* JSONAPI.m in Sources */,
 				D53067AC18FE9263003D84ED /* ioapi.c in Sources */,
 				D52D5D1918FE615300B8C6B8 /* FMResultSet.m in Sources */,
