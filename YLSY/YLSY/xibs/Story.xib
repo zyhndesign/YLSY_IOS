@@ -13,8 +13,17 @@
         <view contentMode="scaleToFill" id="gMX-RK-FzR">
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1616"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="artifacts.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="COY-eZ-Of1">
+                    <rect key="frame" x="-123" y="440" width="1280" height="720"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>
     </objects>
+    <resources>
+        <image name="artifacts.jpg" width="1280" height="720"/>
+    </resources>
 </document>
