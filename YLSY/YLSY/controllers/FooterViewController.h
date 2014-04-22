@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface FooterViewController : UIViewController
+{
+    
+    IBOutlet UILabel *coRightLabel;
+    IBOutlet UILabel *developerLabel;
+}
 
+@property (strong, nonatomic) IBOutlet UILabel *developerLabel;
+@property (strong, nonatomic) IBOutlet UILabel *coRightLabel;
 @end

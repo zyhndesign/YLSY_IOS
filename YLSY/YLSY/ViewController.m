@@ -24,7 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"%@",NSLocalizedString(@"TopMenuHistory", @""));
+    
     [btnHistory setTitle:NSLocalizedString(@"TopMenuHistory", @"") forState:UIControlStateNormal];
     [btnLandscape setTitle:NSLocalizedString(@"TopMenuLandscape", @"") forState:UIControlStateNormal];
     [btnHumanity setTitle:NSLocalizedString(@"TopMenuHumanity", @"") forState:UIControlStateNormal];
@@ -80,7 +80,7 @@
     CGFloat contentSizeHeight = originHeight + footerViewCGSize.height;
     
     mainScrollView.contentSize = CGSizeMake(screenBounds.size.width, contentSizeHeight);
-    mainScrollView.bounces = NO;
+    mainScrollView.bounces = YES;
     mainScrollView.delegate = self;
 }
 

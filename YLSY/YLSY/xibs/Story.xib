@@ -11,19 +11,44 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="gMX-RK-FzR">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="1616"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1360"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="artifacts.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="COY-eZ-Of1">
-                    <rect key="frame" x="-123" y="440" width="1280" height="720"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="artifacts.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H2H-Yw-gfD">
+                    <rect key="frame" x="0.0" y="0.0" width="1280" height="720"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="artifactslogo" translatesAutoresizingMaskIntoConstraints="NO" id="rkO-iX-OYK">
+                    <rect key="frame" x="321" y="201" width="382" height="261"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="downarrow" translatesAutoresizingMaskIntoConstraints="NO" id="va6-Pg-hlq">
+                    <rect key="frame" x="490" y="582" width="44" height="46"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-oM-GtT">
+                    <rect key="frame" x="0.0" y="719" width="1024" height="603"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vww-i5-30I">
+                            <rect key="frame" x="32" y="138" width="960" height="465"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="W7u-L3-WY4">
+                    <rect key="frame" x="490" y="1330" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </pageControl>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>
     </objects>
     <resources>
         <image name="artifacts.jpg" width="1280" height="720"/>
+        <image name="artifactslogo" width="382" height="261"/>
+        <image name="downarrow" width="44" height="46"/>
     </resources>
 </document>
