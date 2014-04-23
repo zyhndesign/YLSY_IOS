@@ -38,15 +38,16 @@
     countPage = 10;
     currentPage = 0;
     
+    self.landscapeScrollView.contentSize = CGSizeMake(self.landscapeScrollView.frame.size.width * countPage, self.landscapeScrollView.frame.size.height);
+    
     for (int i = 0; i < 2; i++)
     {
         if (i <= countPage)
         {
             [self assemblePanel:i];
         }
-    }
+    }    
     
-    self.landscapeScrollView.contentSize = CGSizeMake(self.landscapeScrollView.frame.size.width * countPage, self.landscapeScrollView.frame.size.height);
     landscapeScrollView.backgroundColor = [UIColor clearColor];
     landscapePageControll.currentPage = 0;
     landscapePageControll.numberOfPages = countPage;

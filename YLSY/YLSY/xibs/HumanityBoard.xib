@@ -10,15 +10,15 @@
             <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic11.png" translatesAutoresizingMaskIntoConstraints="NO" id="adg-Ut-sH8">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="401" contentMode="scaleToFill" fixedFrame="YES" image="pic11.png" translatesAutoresizingMaskIntoConstraints="NO" id="adg-Ut-sH8">
                     <rect key="frame" x="6" y="2" width="250" height="250"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic8.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-SQ-d2w">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="411" contentMode="scaleToFill" fixedFrame="YES" image="pic8.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-SQ-d2w">
                     <rect key="frame" x="274" y="249" width="250" height="250"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic9.png" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-jy-qhb">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="421" contentMode="scaleToFill" fixedFrame="YES" image="pic9.png" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-jy-qhb">
                     <rect key="frame" x="543" y="2" width="250" height="250"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

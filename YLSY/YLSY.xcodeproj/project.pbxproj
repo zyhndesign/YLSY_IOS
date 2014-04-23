@@ -102,6 +102,7 @@
 		D5F55C6C19074AC4004AF33B /* LandscapeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F55C6B19074AC4004AF33B /* LandscapeBoard.xib */; };
 		D5F55C6E19075026004AF33B /* HumanityBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F55C6D19075026004AF33B /* HumanityBoard.xib */; };
 		D5F55C70190757E9004AF33B /* StoryBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F55C6F190757E9004AF33B /* StoryBoard.xib */; };
+		D5F55C741907BCAB004AF33B /* UIImageView+ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F55C731907BCAB004AF33B /* UIImageView+ImageUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +266,8 @@
 		D5F55C6B19074AC4004AF33B /* LandscapeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeBoard.xib; sourceTree = "<group>"; };
 		D5F55C6D19075026004AF33B /* HumanityBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityBoard.xib; sourceTree = "<group>"; };
 		D5F55C6F190757E9004AF33B /* StoryBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryBoard.xib; sourceTree = "<group>"; };
+		D5F55C721907BCAB004AF33B /* UIImageView+ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageUtils.h"; sourceTree = "<group>"; };
+		D5F55C731907BCAB004AF33B /* UIImageView+ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +353,7 @@
 		D52D5CA918FE34C700B8C6B8 /* YLSY */ = {
 			isa = PBXGroup;
 			children = (
+				D5F55C711907BC7D004AF33B /* classes */,
 				D5E1C3511904F5840019E05B /* controllers */,
 				D5E1C3441904D2170019E05B /* xibs */,
 				D52D5D8618FE683B00B8C6B8 /* images */,
@@ -621,6 +625,15 @@
 			path = controllers;
 			sourceTree = "<group>";
 		};
+		D5F55C711907BC7D004AF33B /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5F55C721907BCAB004AF33B /* UIImageView+ImageUtils.h */,
+				D5F55C731907BCAB004AF33B /* UIImageView+ImageUtils.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -774,6 +787,7 @@
 				D5E1C3541904F60C0019E05B /* HistoryViewController.m in Sources */,
 				D52D5D1618FE615300B8C6B8 /* FMDatabaseAdditions.m in Sources */,
 				D52D5CF818FE5AA100B8C6B8 /* AFURLResponseSerialization.m in Sources */,
+				D5F55C741907BCAB004AF33B /* UIImageView+ImageUtils.m in Sources */,
 				D52D5D8018FE64E700B8C6B8 /* NSArray+JSONModel.m in Sources */,
 				D52D5D7D18FE64E700B8C6B8 /* JSONModelArray.m in Sources */,
 				D53067AE18FE9263003D84ED /* unzip.c in Sources */,

@@ -10,6 +10,8 @@
 
 @interface HumanityViewController : UIViewController<UIScrollViewDelegate>
 {
+    IBOutlet UIView *bgHumanityView;
+    
     IBOutlet UIScrollView *humanityScrollView;
 
     IBOutlet UIPageControl *humanityPageControll;
@@ -24,6 +26,8 @@
     
     NSMutableDictionary *muDistionary;
 }
+@property (strong, nonatomic) IBOutlet UIView *bgHumanityView;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *humanityScrollView;
 
 @property (strong, nonatomic) IBOutlet UIPageControl *humanityPageControll;

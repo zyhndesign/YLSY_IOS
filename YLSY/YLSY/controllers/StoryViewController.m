@@ -39,6 +39,8 @@
     countPage = 10;
     currentPage = 0;
     
+    self.storyScrollView.contentSize = CGSizeMake(self.storyScrollView.frame.size.width * countPage, self.storyScrollView.frame.size.height);
+    
     for (int i = 0; i < 2; i++)
     {
         if (i <= countPage)
@@ -46,8 +48,6 @@
             [self assemblePanel:i];
         }
     }
-    
-    self.storyScrollView.contentSize = CGSizeMake(self.storyScrollView.frame.size.width * countPage, self.storyScrollView.frame.size.height);
     
     storyPageControll.currentPage = 0;
     storyPageControll.numberOfPages = countPage;

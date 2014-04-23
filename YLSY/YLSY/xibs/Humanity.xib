@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanityViewController">
             <connections>
+                <outlet property="bgHumanityView" destination="17L-Bh-7fD" id="VSA-Zb-oG1"/>
                 <outlet property="humanityLeftImg" destination="2UZ-9r-fQK" id="E3y-EL-uLb"/>
                 <outlet property="humanityPageControll" destination="L0i-KS-bd8" id="a3m-vS-YTh"/>
                 <outlet property="humanityRightImg" destination="oCp-m1-9xn" id="HBs-Dl-h7H"/>
@@ -30,28 +31,35 @@
                     <rect key="frame" x="309" y="151" width="382" height="261"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
-                    <rect key="frame" x="0.0" y="685" width="1024" height="682"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="17L-Bh-7fD">
+                    <rect key="frame" x="0.0" y="685" width="1024" height="684"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
+                            <rect key="frame" x="105" y="78" width="810" height="507"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </scrollView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leftarrow" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-9r-fQK">
+                            <rect key="frame" x="37" y="328" width="36" height="36"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-m1-9xn">
+                            <rect key="frame" x="954" y="328" width="36" height="36"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
                         <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="L0i-KS-bd8">
-                            <rect key="frame" x="420" y="629" width="200" height="37"/>
+                            <rect key="frame" x="412" y="613" width="200" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="pageIndicatorTintColor" red="0.4516639113" green="0.4516503811" blue="0.45165804030000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="changepage:" destination="-1" eventType="valueChanged" id="s3z-GH-lEm"/>
                             </connections>
                         </pageControl>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leftarrow" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-9r-fQK">
-                            <rect key="frame" x="20" y="316" width="36" height="36"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-m1-9xn">
-                            <rect key="frame" x="968" y="316" width="36" height="36"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </scrollView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>

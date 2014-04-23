@@ -7,6 +7,7 @@
 //
 
 #import "HumanityViewController.h"
+#import "UIImageView+ImageUtils.h"
 
 @interface HumanityViewController ()
 
@@ -14,7 +15,7 @@
 
 @implementation HumanityViewController
 
-@synthesize  humanityLeftImg, humanityPageControll, humanityRightImg, humanityScrollView;
+@synthesize  bgHumanityView, humanityLeftImg, humanityPageControll, humanityRightImg, humanityScrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,13 +31,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [humanityScrollView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"humanitybackground.png"]]];
+    [bgHumanityView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"humanitybackground.png"]]];
     
     humanityScrollView.delegate = self;
     
     muDistionary = [NSMutableDictionary dictionaryWithCapacity:4];
     countPage = 10;
     currentPage = 0;
+    self.humanityScrollView.contentSize = CGSizeMake(self.humanityScrollView.frame.size.width * countPage, self.humanityScrollView.frame.size.height);
+    humanityScrollView.backgroundColor = [UIColor clearColor];
     
     for (int i = 0; i < 2; i++)
     {
@@ -44,9 +47,7 @@
         {
             [self assemblePanel:i];
         }
-    }
-    
-    self.humanityScrollView.contentSize = CGSizeMake(self.humanityScrollView.frame.size.width * countPage, self.humanityScrollView.frame.size.height);
+    }   
     
     humanityPageControll.currentPage = 0;
     humanityPageControll.numberOfPages = countPage;
@@ -109,9 +110,9 @@
     UIView *subview = [[bundle loadNibNamed:@"HumanityBoard" owner:self options:nil] lastObject];
     subview.backgroundColor = [UIColor clearColor];
     
-    frame.origin.x = self.humanityScrollView.frame.size.width * (pageNum) + 110;
-    frame.origin.y = 70;
-    frame.size.width = self.humanityScrollView.frame.size.width - 220;
+    frame.origin.x = self.humanityScrollView.frame.size.width * (pageNum);
+    frame.origin.y = 0;
+    frame.size.width = self.humanityScrollView.frame.size.width;
     frame.size.height = subview.frame.size.height;
     if (subview != nil)
     {
@@ -119,6 +120,15 @@
         //UIControl *secondPanel = (UIControl*)[subview viewWithTag:319];
         //UIControl *thirdPanel = (UIControl*)[subview viewWithTag:320];
         //UIControl *fourPanel = (UIControl*)[subview viewWithTag:321];
+        
+        UIImageView *firstImage = (UIImageView *)[subview viewWithTag:401];
+        UIImageView *secondImage = (UIImageView *)[subview viewWithTag:411];
+        UIImageView *thirdImage = (UIImageView *)[subview viewWithTag:421];
+        
+        [firstImage addFrameWithImage];
+        [secondImage addFrameWithImage];
+        [thirdImage addFrameWithImage];
+        
         subview.frame = frame;
         [self.humanityScrollView addSubview:subview];
         
