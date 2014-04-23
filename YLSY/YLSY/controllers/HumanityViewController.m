@@ -14,6 +14,8 @@
 
 @implementation HumanityViewController
 
+@synthesize  humanityLeftImg, humanityPageControll, humanityRightImg, humanityScrollView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [humanityScrollView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"humanitybackground.png"]]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -6,16 +6,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryViewController">
             <connections>
+                <outlet property="storyBgView" destination="QEM-oM-GtT" id="RY3-og-HJm"/>
+                <outlet property="storyPageControll" destination="W7u-L3-WY4" id="yZB-Ha-xPR"/>
+                <outlet property="storyScrollView" destination="Vww-i5-30I" id="Csa-XJ-rGv"/>
                 <outlet property="view" destination="gMX-RK-FzR" id="uoj-Yc-pwm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="gMX-RK-FzR">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="1360"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1368"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="artifacts.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H2H-Yw-gfD">
-                    <rect key="frame" x="0.0" y="0.0" width="1280" height="720"/>
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="684"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="artifactslogo" translatesAutoresizingMaskIntoConstraints="NO" id="rkO-iX-OYK">
@@ -27,18 +30,18 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-oM-GtT">
-                    <rect key="frame" x="0.0" y="719" width="1024" height="603"/>
+                    <rect key="frame" x="0.0" y="728" width="1024" height="582"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vww-i5-30I">
-                            <rect key="frame" x="32" y="138" width="960" height="465"/>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vww-i5-30I">
+                            <rect key="frame" x="32" y="117" width="960" height="465"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="W7u-L3-WY4">
-                    <rect key="frame" x="490" y="1330" width="39" height="37"/>
+                    <rect key="frame" x="412" y="1322" width="200" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </pageControl>
             </subviews>

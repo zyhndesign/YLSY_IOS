@@ -9,5 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface HumanityViewController : UIViewController
+{
+    IBOutlet UIScrollView *humanityScrollView;
 
+    IBOutlet UIPageControl *humanityPageControll;
+    
+    IBOutlet UIImageView *humanityLeftImg;
+    
+    IBOutlet UIImageView *humanityRightImg;
+}
+@property (strong, nonatomic) IBOutlet UIScrollView *humanityScrollView;
+
+@property (strong, nonatomic) IBOutlet UIPageControl *humanityPageControll;
+
+@property (strong, nonatomic) IBOutlet UIImageView *humanityLeftImg;
+
+@property (strong, nonatomic) IBOutlet UIImageView *humanityRightImg;
 @end

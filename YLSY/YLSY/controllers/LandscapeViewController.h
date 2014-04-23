@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface LandscapeViewController : UIViewController
+{
+    IBOutlet UIView *bgView;
+    IBOutlet UIScrollView *landscapeScrollView;
+    IBOutlet UIPageControl *landscapePageControll;
+}
+@property (strong, nonatomic) IBOutlet UIView *bgView;
+@property (strong, nonatomic) IBOutlet UIScrollView *landscapeScrollView;
+@property (strong, nonatomic) IBOutlet UIPageControl *landscapePageControll;
 
 @end

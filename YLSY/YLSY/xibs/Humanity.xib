@@ -6,12 +6,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanityViewController">
             <connections>
+                <outlet property="humanityLeftImg" destination="2UZ-9r-fQK" id="E3y-EL-uLb"/>
+                <outlet property="humanityPageControll" destination="L0i-KS-bd8" id="a3m-vS-YTh"/>
+                <outlet property="humanityRightImg" destination="oCp-m1-9xn" id="HBs-Dl-h7H"/>
+                <outlet property="humanityScrollView" destination="Nud-2f-fdU" id="P56-W3-G28"/>
                 <outlet property="view" destination="DXa-1x-cgr" id="XMO-dp-3if"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="DXa-1x-cgr">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="1370"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1368"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="humanity.png" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-en-Gfr">
@@ -26,21 +30,24 @@
                     <rect key="frame" x="309" y="151" width="382" height="261"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FXl-ad-1Uw">
-                    <rect key="frame" x="1" y="684" width="1022" height="632"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
+                    <rect key="frame" x="0.0" y="685" width="1024" height="682"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
-                            <rect key="frame" x="0.0" y="40" width="1022" height="518"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        </scrollView>
                         <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="L0i-KS-bd8">
-                            <rect key="frame" x="411" y="583" width="200" height="37"/>
+                            <rect key="frame" x="420" y="629" width="200" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leftarrow" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-9r-fQK">
+                            <rect key="frame" x="20" y="316" width="36" height="36"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-m1-9xn">
+                            <rect key="frame" x="968" y="316" width="36" height="36"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </view>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -50,5 +57,7 @@
         <image name="downarrow" width="44" height="46"/>
         <image name="humanity.png" width="1022" height="684"/>
         <image name="humanitylogo" width="382" height="261"/>
+        <image name="leftarrow" width="36" height="36"/>
+        <image name="rightarrow" width="36" height="36"/>
     </resources>
 </document>

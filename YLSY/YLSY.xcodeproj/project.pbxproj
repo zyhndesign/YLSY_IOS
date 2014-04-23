@@ -99,6 +99,9 @@
 		D5E1C35A1904F6340019E05B /* HumanityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C3591904F6340019E05B /* HumanityViewController.m */; };
 		D5E1C35D1904F6470019E05B /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C35C1904F6470019E05B /* StoryViewController.m */; };
 		D5E1C3601904F6580019E05B /* FooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1C35F1904F6580019E05B /* FooterViewController.m */; };
+		D5F55C6C19074AC4004AF33B /* LandscapeBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F55C6B19074AC4004AF33B /* LandscapeBoard.xib */; };
+		D5F55C6E19075026004AF33B /* HumanityBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F55C6D19075026004AF33B /* HumanityBoard.xib */; };
+		D5F55C70190757E9004AF33B /* StoryBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F55C6F190757E9004AF33B /* StoryBoard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,6 +262,9 @@
 		D5E1C35C1904F6470019E05B /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		D5E1C35E1904F6580019E05B /* FooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterViewController.h; sourceTree = "<group>"; };
 		D5E1C35F1904F6580019E05B /* FooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterViewController.m; sourceTree = "<group>"; };
+		D5F55C6B19074AC4004AF33B /* LandscapeBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeBoard.xib; sourceTree = "<group>"; };
+		D5F55C6D19075026004AF33B /* HumanityBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumanityBoard.xib; sourceTree = "<group>"; };
+		D5F55C6F190757E9004AF33B /* StoryBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryBoard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,6 +597,9 @@
 				D5E1C34B1904D6290019E05B /* Humanity.xib */,
 				D5E1C34D1904D6370019E05B /* Story.xib */,
 				D5E1C34F1904F1A60019E05B /* Footer.xib */,
+				D5F55C6B19074AC4004AF33B /* LandscapeBoard.xib */,
+				D5F55C6D19075026004AF33B /* HumanityBoard.xib */,
+				D5F55C6F190757E9004AF33B /* StoryBoard.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -702,6 +711,7 @@
 				D5E1790319066A630045EA7C /* landscapsbackground.png in Resources */,
 				D5E1C34A1904D6180019E05B /* Landscape.xib in Resources */,
 				D52D5DB018FE689C00B8C6B8 /* pic14.png in Resources */,
+				D5F55C6E19075026004AF33B /* HumanityBoard.xib in Resources */,
 				D52D5DA318FE689C00B8C6B8 /* pic1.png in Resources */,
 				D5E1C34E1904D6370019E05B /* Story.xib in Resources */,
 				D52D5CBC18FE34C700B8C6B8 /* Images.xcassets in Resources */,
@@ -718,7 +728,9 @@
 				D5E1C3501904F1A60019E05B /* Footer.xib in Resources */,
 				D52D5DA818FE689C00B8C6B8 /* pic6.png in Resources */,
 				D5E1790019066A630045EA7C /* humanity.png in Resources */,
+				D5F55C6C19074AC4004AF33B /* LandscapeBoard.xib in Resources */,
 				D52D5DA918FE689C00B8C6B8 /* pic7.png in Resources */,
+				D5F55C70190757E9004AF33B /* StoryBoard.xib in Resources */,
 				D52D5DA618FE689C00B8C6B8 /* pic4.png in Resources */,
 				D52D5DA518FE689C00B8C6B8 /* pic3.png in Resources */,
 				D5E178FF19066A630045EA7C /* historybackground.png in Resources */,

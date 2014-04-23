@@ -14,6 +14,8 @@
 
 @implementation LandscapeViewController
 
+@synthesize bgView, landscapePageControll, landscapeScrollView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    bgView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"landscapsbackground.png"]];
 }
 
 - (void)didReceiveMemoryWarning

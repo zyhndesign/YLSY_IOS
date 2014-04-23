@@ -14,6 +14,8 @@
 
 @implementation StoryViewController
 
+@synthesize storyBgView, storyPageControll, storyScrollView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    storyBgView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"artifactsbackground.png"]];
 }
 
 - (void)didReceiveMemoryWarning

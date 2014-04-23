@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface StoryViewController : UIViewController
+{
+    IBOutlet UIView *storyBgView;
+    IBOutlet UIScrollView *storyScrollView;
+    IBOutlet UIPageControl *storyPageControll;
+}
+@property (strong, nonatomic) IBOutlet UIView *storyBgView;
+@property (strong, nonatomic) IBOutlet UIScrollView *storyScrollView;
+@property (strong, nonatomic) IBOutlet UIPageControl *storyPageControll;
 
 @end

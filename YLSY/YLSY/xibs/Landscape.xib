@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandscapeViewController">
             <connections>
+                <outlet property="bgView" destination="SXK-b3-W1F" id="diM-SX-INr"/>
+                <outlet property="landscapePageControll" destination="ZLV-rT-yoG" id="VbJ-dw-067"/>
+                <outlet property="landscapeScrollView" destination="h4G-9X-WYX" id="k41-BJ-3Gs"/>
                 <outlet property="view" destination="ScL-gg-VVI" id="Zt1-6n-hbn"/>
             </connections>
         </placeholder>
@@ -31,10 +34,10 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-b3-W1F">
-                    <rect key="frame" x="0.0" y="683" width="1024" height="581"/>
+                    <rect key="frame" x="0.0" y="685" width="1024" height="581"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4G-9X-WYX">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4G-9X-WYX">
                             <rect key="frame" x="18" y="54" width="984" height="438"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </scrollView>
