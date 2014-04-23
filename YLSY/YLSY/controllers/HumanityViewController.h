@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HumanityViewController : UIViewController
+@interface HumanityViewController : UIViewController<UIScrollViewDelegate>
 {
     IBOutlet UIScrollView *humanityScrollView;
 
@@ -17,6 +17,12 @@
     IBOutlet UIImageView *humanityLeftImg;
     
     IBOutlet UIImageView *humanityRightImg;
+    
+    int currentPage;
+    int countPage;
+    BOOL pageControlBeingUsed;
+    
+    NSMutableDictionary *muDistionary;
 }
 @property (strong, nonatomic) IBOutlet UIScrollView *humanityScrollView;
 
@@ -25,4 +31,11 @@
 @property (strong, nonatomic) IBOutlet UIImageView *humanityLeftImg;
 
 @property (strong, nonatomic) IBOutlet UIImageView *humanityRightImg;
+
+-(void) addNewModelInScrollView:(int) pageNum;
+
+-(void) removeOldModelInScrollView:(int)pageNum;
+
+- (IBAction)changepage:(id)sender;
+
 @end

@@ -30,13 +30,16 @@
                     <rect key="frame" x="309" y="151" width="382" height="261"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
                     <rect key="frame" x="0.0" y="685" width="1024" height="682"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="L0i-KS-bd8">
                             <rect key="frame" x="420" y="629" width="200" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="changepage:" destination="-1" eventType="valueChanged" id="s3z-GH-lEm"/>
+                            </connections>
                         </pageControl>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leftarrow" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-9r-fQK">
                             <rect key="frame" x="20" y="316" width="36" height="36"/>
@@ -47,6 +50,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

@@ -8,14 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LandscapeViewController : UIViewController
+@interface LandscapeViewController : UIViewController<UIScrollViewDelegate>
 {
     IBOutlet UIView *bgView;
     IBOutlet UIScrollView *landscapeScrollView;
     IBOutlet UIPageControl *landscapePageControll;
+    
+    int currentPage;
+    int countPage;
+    BOOL pageControlBeingUsed;
+    
+    NSMutableDictionary *muDistionary;
 }
 @property (strong, nonatomic) IBOutlet UIView *bgView;
 @property (strong, nonatomic) IBOutlet UIScrollView *landscapeScrollView;
 @property (strong, nonatomic) IBOutlet UIPageControl *landscapePageControll;
+
+-(void) addNewModelInScrollView:(int) pageNum;
+
+-(void) removeOldModelInScrollView:(int)pageNum;
+
+- (IBAction)changePage:(id)sender;
 
 @end

@@ -8,14 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StoryViewController : UIViewController
+@interface StoryViewController : UIViewController<UIScrollViewDelegate>
 {
     IBOutlet UIView *storyBgView;
     IBOutlet UIScrollView *storyScrollView;
     IBOutlet UIPageControl *storyPageControll;
+    int currentPage;
+    int countPage;
+    BOOL pageControlBeingUsed;
+    
+    NSMutableDictionary *muDistionary;
+    
 }
 @property (strong, nonatomic) IBOutlet UIView *storyBgView;
 @property (strong, nonatomic) IBOutlet UIScrollView *storyScrollView;
 @property (strong, nonatomic) IBOutlet UIPageControl *storyPageControll;
+
+-(void) addNewModelInScrollView:(int) pageNum;
+
+-(void) removeOldModelInScrollView:(int)pageNum;
+
+- (IBAction)changePage:(id)sender;
 
 @end

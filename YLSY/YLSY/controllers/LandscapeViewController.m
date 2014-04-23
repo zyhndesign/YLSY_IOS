@@ -31,6 +31,123 @@
     // Do any additional setup after loading the view.
     
     bgView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"landscapsbackground.png"]];
+    
+    landscapeScrollView.delegate = self;
+    
+    muDistionary = [NSMutableDictionary dictionaryWithCapacity:4];
+    countPage = 10;
+    currentPage = 0;
+    
+    for (int i = 0; i < 2; i++)
+    {
+        if (i <= countPage)
+        {
+            [self assemblePanel:i];
+        }
+    }
+    
+    self.landscapeScrollView.contentSize = CGSizeMake(self.landscapeScrollView.frame.size.width * countPage, self.landscapeScrollView.frame.size.height);
+    landscapeScrollView.backgroundColor = [UIColor clearColor];
+    landscapePageControll.currentPage = 0;
+    landscapePageControll.numberOfPages = countPage;
+    
+    pageControlBeingUsed = NO;
+}
+
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (!pageControlBeingUsed)
+    {
+        CGFloat pageWidth = self.landscapeScrollView.frame.size.width;
+        currentPage = floor((landscapeScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+        landscapePageControll.currentPage = currentPage;
+    }
+}
+
+-(void) scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    NSLog(@"Begin Dragging.....");
+    [self addNewModelInScrollView:currentPage];
+    pageControlBeingUsed = NO;
+}
+
+-(void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSLog(@"End Dragging.....");
+    [self removeOldModelInScrollView:currentPage];
+    pageControlBeingUsed = NO;
+}
+
+-(void) addNewModelInScrollView:(int)pageNum
+{
+    if (nil != landscapeScrollView)
+    {
+        NSLog(@"currentPage : %i",currentPage);
+        
+        UIView* subview3 = [muDistionary objectForKey:[NSNumber numberWithInt:(pageNum + 1)]];
+        if (nil == subview3 && (pageNum + 1 < countPage))
+        {
+            [self assemblePanel:(pageNum + 1)];
+        }
+        
+        UIView* subview4 = [muDistionary objectForKey:[NSNumber numberWithInt:(pageNum - 1)]];
+        if (nil == subview4 && (pageNum - 1 >= 0))
+        {
+            
+            [self assemblePanel:(pageNum - 1)];
+        }
+    }
+}
+
+-(void) assemblePanel:(int) pageNum
+{
+    NSLog(@"landscape add view with ID: %i",(pageNum));
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    //NSMutableArray * muArray = [db getLandscapeDataByPage:pageNum];
+    
+    CGRect frame;
+    UIView *subview = [[bundle loadNibNamed:@"LandscapeBoard" owner:self options:nil] lastObject];
+    subview.backgroundColor = [UIColor clearColor];
+    
+    frame.origin.x = self.landscapeScrollView.frame.size.width * (pageNum);
+    frame.origin.y = 20;
+    frame.size.width = self.landscapeScrollView.frame.size.width;
+    frame.size.height = subview.frame.size.height;
+    if (subview != nil)
+    {
+        //UIControl *firstPanel = (UIControl*)[subview viewWithTag:318];
+        //UIControl *secondPanel = (UIControl*)[subview viewWithTag:319];
+        //UIControl *thirdPanel = (UIControl*)[subview viewWithTag:320];
+        //UIControl *fourPanel = (UIControl*)[subview viewWithTag:321];
+        subview.frame = frame;
+        [self.landscapeScrollView addSubview:subview];
+        [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];
+    }
+}
+
+-(void) removeOldModelInScrollView:(int)pageNum
+{
+    UIView* subview1 = [muDistionary objectForKey:[NSNumber numberWithInt:(pageNum + 2)]];
+    if (nil != subview1 && (pageNum + 2) < countPage)
+    {
+        NSLog(@"remove view with ID: %i",(pageNum + 2));
+        [subview1 removeFromSuperview];
+        [muDistionary removeObjectForKey:[NSNumber numberWithInt:(pageNum + 2)]];
+    }
+    
+    UIView* subview2 = [muDistionary objectForKey:[NSNumber numberWithInt:(pageNum - 2)]];
+    if (nil != subview2 && (pageNum - 2 >= 0))
+    {
+        NSLog(@"remove view with ID: %i",(pageNum - 2));
+        [subview2 removeFromSuperview];
+        [muDistionary removeObjectForKey:[NSNumber numberWithInt:(pageNum - 2)]];
+    }
+}
+
+- (IBAction)changePage:(id)sender
+{
+    pageControlBeingUsed = YES;
 }
 
 - (void)didReceiveMemoryWarning
