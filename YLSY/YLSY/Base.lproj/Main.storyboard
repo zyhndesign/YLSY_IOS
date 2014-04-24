@@ -41,41 +41,69 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rar-9r-nGy">
-                                        <rect key="frame" x="78" y="27" width="80" height="30"/>
+                                        <rect key="frame" x="68" y="27" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.1411764771" green="0.13333334029999999" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnHistoryClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hh8-oZ-fzK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGw-IW-p4D">
                                         <rect key="frame" x="203" y="27" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.1411764771" green="0.13333334029999999" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnLandscapeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TuV-Ta-zHC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRh-Ux-hgp">
-                                        <rect key="frame" x="742" y="30" width="80" height="30"/>
+                                        <rect key="frame" x="742" y="30" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.1411764771" green="0.13333334029999999" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnHumanityClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4O-HG-9io"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vno-fV-IRI">
-                                        <rect key="frame" x="888" y="30" width="80" height="30"/>
+                                        <rect key="frame" x="888" y="30" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.1411764771" green="0.13333334029999999" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnStoryClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2w-bh-AfK"/>
+                                        </connections>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="V3k-Ss-zqB">
+                                        <rect key="frame" x="76" y="68" width="80" height="3"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Oor-eE-XQG">
+                                        <rect key="frame" x="210" y="70" width="80" height="3"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="ave-pU-1Gz">
+                                        <rect key="frame" x="752" y="68" width="80" height="3"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="SsT-1x-wCb">
+                                        <rect key="frame" x="898" y="68" width="80" height="3"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -93,8 +121,12 @@
                         <outlet property="btnHumanity" destination="YRh-Ux-hgp" id="7Tb-xI-ec4"/>
                         <outlet property="btnLandscape" destination="IGw-IW-p4D" id="Gqx-1K-KcK"/>
                         <outlet property="btnStory" destination="vno-fV-IRI" id="4xm-2l-V8b"/>
+                        <outlet property="historyUnderline" destination="V3k-Ss-zqB" id="RkF-f8-DKK"/>
+                        <outlet property="humanityUnderline" destination="ave-pU-1Gz" id="BS2-PO-bkc"/>
                         <outlet property="imgAppLogo" destination="5W0-oP-SI6" id="eBn-sf-ZNp"/>
+                        <outlet property="landscapeUnderline" destination="Oor-eE-XQG" id="ynE-Ch-1ls"/>
                         <outlet property="mainScrollView" destination="LPt-wv-Yfc" id="uOd-wB-7hk"/>
+                        <outlet property="storyUnderline" destination="SsT-1x-wCb" id="3LI-qj-ydC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,6 +165,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bar" width="54" height="3"/>
         <image name="loadingPageLogo" width="1280" height="300"/>
         <image name="slantedbar" width="55" height="78"/>
         <image name="topbackground.jpg" width="1024" height="768"/>

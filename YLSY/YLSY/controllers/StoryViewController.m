@@ -7,6 +7,7 @@
 //
 
 #import "StoryViewController.h"
+#import "UIImageView+ImageUtils.h"
 
 @interface StoryViewController ()
 
@@ -145,6 +146,24 @@
         //UIControl *thirdPanel = (UIControl*)[subview viewWithTag:320];
         //UIControl *fourPanel = (UIControl*)[subview viewWithTag:321];
         subview.frame = frame;
+        
+        UIImageView *firstImg = (UIImageView *)[subview viewWithTag:501];
+        UIImageView *secondImg = (UIImageView *)[subview viewWithTag:505];
+        UIImageView *thirdImg = (UIImageView *)[subview viewWithTag:510];
+        UIImageView *fourImg = (UIImageView *)[subview viewWithTag:515];
+        UIImageView *fiveImg = (UIImageView *)[subview viewWithTag:520];
+        UIImageView *sixImg = (UIImageView *)[subview viewWithTag:525];
+        UIImageView *sevenImg = (UIImageView *)[subview viewWithTag:530];
+        UIImageView *eightImg = (UIImageView *)[subview viewWithTag:535];
+        [firstImg addFrameWithImage];
+        [secondImg addFrameWithImage];
+        [thirdImg addFrameWithImage];
+        [fourImg addFrameWithImage];
+        [fiveImg addFrameWithImage];
+        [sixImg addFrameWithImage];
+        [sevenImg addFrameWithImage];
+        [eightImg addFrameWithImage];
+        
         [self.storyScrollView addSubview:subview];
         
         [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];

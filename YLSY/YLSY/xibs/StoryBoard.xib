@@ -10,35 +10,35 @@
             <rect key="frame" x="0.0" y="0.0" width="960" height="488"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic16.png" translatesAutoresizingMaskIntoConstraints="NO" id="HuQ-AQ-TBZ">
-                    <rect key="frame" x="7" y="8" width="230" height="230"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="501" contentMode="center" fixedFrame="YES" image="pic16.png" translatesAutoresizingMaskIntoConstraints="NO" id="HuQ-AQ-TBZ">
+                    <rect key="frame" x="8" y="8" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic12.png" translatesAutoresizingMaskIntoConstraints="NO" id="uA5-5I-fny">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="505" contentMode="center" fixedFrame="YES" image="pic12.png" translatesAutoresizingMaskIntoConstraints="NO" id="uA5-5I-fny">
                     <rect key="frame" x="246" y="8" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic14.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xt2-NM-Am0">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="510" contentMode="center" fixedFrame="YES" image="pic14.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xt2-NM-Am0">
                     <rect key="frame" x="485" y="8" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic13.png" translatesAutoresizingMaskIntoConstraints="NO" id="G4g-tQ-Coy">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="515" contentMode="center" fixedFrame="YES" image="pic13.png" translatesAutoresizingMaskIntoConstraints="NO" id="G4g-tQ-Coy">
                     <rect key="frame" x="724" y="8" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic16.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Hn-nK-p4D">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="530" contentMode="center" fixedFrame="YES" image="pic16.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Hn-nK-p4D">
                     <rect key="frame" x="485" y="248" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic12.png" translatesAutoresizingMaskIntoConstraints="NO" id="lab-ss-Xhl">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="535" contentMode="center" fixedFrame="YES" image="pic12.png" translatesAutoresizingMaskIntoConstraints="NO" id="lab-ss-Xhl">
                     <rect key="frame" x="724" y="248" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic13.png" translatesAutoresizingMaskIntoConstraints="NO" id="S91-51-gJ2">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="520" contentMode="center" fixedFrame="YES" image="pic13.png" translatesAutoresizingMaskIntoConstraints="NO" id="S91-51-gJ2">
                     <rect key="frame" x="7" y="248" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pic18.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kqr-pG-DP0">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="525" contentMode="center" fixedFrame="YES" image="pic18.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kqr-pG-DP0">
                     <rect key="frame" x="246" y="248" width="230" height="230"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>

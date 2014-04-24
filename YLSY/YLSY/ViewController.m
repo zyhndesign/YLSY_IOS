@@ -46,12 +46,16 @@
     
     historyViewController = [[HistoryViewController new] initWithNibName:@"History" bundle:nil];
     CGSize historyViewCGSize = historyViewController.view.frame.size;
+    historyYValue = mainScrollView.frame.size.height;
+    
     [mainScrollView addSubview:historyViewController.view];
     [self addChildViewController:historyViewController];
 
     landscapeViewController = [[LandscapeViewController new] initWithNibName:@"Landscape" bundle:nil];
     CGSize landscapeViewCGSize = landscapeViewController.view.frame.size;
     originHeight = originHeight + historyViewCGSize.height;
+    landscapeYValue = originHeight;
+    
     landscapeViewController.view.frame = CGRectMake(0, originHeight,landscapeViewCGSize.width,landscapeViewCGSize.height);
     [mainScrollView addSubview:landscapeViewController.view];
     [self addChildViewController:landscapeViewController];
@@ -59,6 +63,8 @@
     humanityViewController = [[HumanityViewController new]initWithNibName:@"Humanity" bundle:nil];
     CGSize humanityViewCGSize = landscapeViewController.view.frame.size;
     originHeight = originHeight + landscapeViewCGSize.height;
+    humanityYValue = originHeight;
+    
     humanityViewController.view.frame = CGRectMake(0, originHeight,humanityViewCGSize.width,humanityViewCGSize.height);
     [mainScrollView addSubview:humanityViewController.view];
     [self addChildViewController:humanityViewController];
@@ -66,6 +72,7 @@
     storyViewController = [[StoryViewController new] initWithNibName:@"Story" bundle:nil];
     CGSize storyViewCGSize = storyViewController.view.frame.size;
     originHeight = originHeight + humanityViewCGSize.height;
+    storyYValue = originHeight;
     storyViewController.view.frame = CGRectMake(0, originHeight,storyViewCGSize.width,storyViewCGSize.height);
     [mainScrollView addSubview:storyViewController.view];
     [self addChildViewController:storyViewController];
@@ -82,6 +89,10 @@
     mainScrollView.contentSize = CGSizeMake(screenBounds.size.width, contentSizeHeight);
     mainScrollView.bounces = YES;
     mainScrollView.delegate = self;
+    
+    imgAppLogo.userInteractionEnabled = YES;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoOnClick)];
+    [imgAppLogo addGestureRecognizer:singleTap];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -95,4 +106,110 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnHistoryClick:(id)sender
+{
+    [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, historyYValue) animated:YES];
+}
+
+- (IBAction)btnLandscapeClick:(id)sender
+{
+    [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, landscapeYValue) animated:YES];
+}
+
+- (IBAction)btnHumanityClick:(id)sender
+{
+    [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, humanityYValue) animated:YES];
+}
+
+- (IBAction)btnStoryClick:(id)sender
+{
+    [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, storyYValue) animated:YES];
+}
+
+-(void)logoOnClick
+{
+    [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, 0) animated:YES];
+}
+
+-(void)programaUnderlineOperation:(UIButton *) btn
+{
+    if ([historyUnderline isHidden] && [btn isEqual:btnHistory])
+    {
+        [self setUnderLineSelectState:YES Landscape:NO Humanity:NO Story:NO];
+    }
+    else if ([landscapeUnderline isHidden] && [btn isEqual:btnLandscape])
+    {
+        [self setUnderLineSelectState:NO Landscape:YES Humanity:NO Story:NO];
+    }
+    else if ([humanityUnderline isHidden] && [btn isEqual:btnHumanity])
+    {
+        [self setUnderLineSelectState:NO Landscape:NO Humanity:YES Story:NO];
+    }
+    else if ([storyUnderline isHidden] && [btn isEqual:btnStory])
+    {
+        [self setUnderLineSelectState:NO Landscape:NO Humanity:NO Story:YES];
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)_scrollView
+{
+    CGFloat offsetY = _scrollView.contentOffset.y;
+    
+    if (offsetY >= historyYValue && offsetY < landscapeYValue)
+    {
+        [self setUnderLineSelectState:YES Landscape:NO Humanity:NO Story:NO];
+    }
+    else if (offsetY >= landscapeYValue && offsetY < humanityYValue)
+    {
+        [self setUnderLineSelectState:NO Landscape:YES Humanity:NO Story:NO];
+    }
+    else if (offsetY >= humanityYValue && offsetY < storyYValue)
+    {
+        [self setUnderLineSelectState:NO Landscape:NO Humanity:YES Story:NO];
+    }
+    else if (offsetY >= storyYValue)
+    {
+        [self setUnderLineSelectState:NO Landscape:NO Humanity:NO Story:YES];
+    }
+    
+}
+
+- (void) setUnderLineSelectState:(BOOL)historyUnderlineState
+                       Landscape:(BOOL)landscapeUnderlineState
+                        Humanity:(BOOL)humanityUnderlineState
+                           Story:(BOOL)storyUnderlineState
+{
+    if (historyUnderlineState && historyUnderline != nil)
+    {
+        [historyUnderline setHidden:NO];
+        [landscapeUnderline setHidden:YES];
+        [humanityUnderline setHidden:YES];
+        [storyUnderline setHidden:YES];
+    }
+    
+    if (landscapeUnderlineState && landscapeUnderline != nil)
+    {
+        [historyUnderline setHidden:YES];
+        [landscapeUnderline setHidden:NO];
+        [humanityUnderline setHidden:YES];
+        [storyUnderline setHidden:YES];
+    }
+    
+    if (humanityUnderlineState && humanityUnderline != nil)
+    {
+        [historyUnderline setHidden:YES];
+        [landscapeUnderline setHidden:YES];
+        [humanityUnderline setHidden:NO];
+        [storyUnderline setHidden:YES];
+    }
+    
+    if (storyUnderlineState && storyUnderline != nil)
+    {
+        [historyUnderline setHidden:YES];
+        [landscapeUnderline setHidden:YES];
+        [humanityUnderline setHidden:YES];
+        [storyUnderline setHidden:NO];
+    }
+   
+}
 @end
