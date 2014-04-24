@@ -7,6 +7,8 @@
 //
 
 #import "FooterViewController.h"
+#import "DownloadViewController.h"
+#import "../libs/Reachability/Reachability.h"
 
 @interface FooterViewController ()
 
@@ -14,7 +16,9 @@
 
 @implementation FooterViewController
 
-@synthesize coRightLabel, developerLabel;
+@synthesize coRightLabel, developerLabel, downloadImage;
+
+DownloadViewController *downloadViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +35,72 @@
     // Do any additional setup after loading the view.
     [coRightLabel setText:NSLocalizedString(@"CopyRight", @"")];
     [developerLabel setText:NSLocalizedString(@"DeveloperCorporation", @"")];
+    
+    downloadImage.userInteractionEnabled = YES;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(launchDownLoadPanel)];
+    [downloadImage addGestureRecognizer:singleTap];
+    
+}
+
+- (void)launchDownLoadPanel
+{
+    //弹出下载面板
+    if (downloadViewController == nil)
+    {
+        Reachability *reacheNet = [Reachability reachabilityWithHostname:@"www.baidu.com"];
+        switch ([reacheNet currentReachabilityStatus]) {
+            case NotReachable: //not network reach
+            {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Remind", @"Remind") message:NSLocalizedString(@"NetworkUnreachable", @"") delegate:nil cancelButtonTitle:NSLocalizedString(@"Confirm", @"")otherButtonTitles:nil, nil];
+                [alert show];
+                break;
+            }
+            case ReachableViaWWAN: //use 3g network
+            {
+                NSLog(@"3g network....");
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Remind", @"Remind") message:NSLocalizedString(@"3gwarn", @"") delegate:nil cancelButtonTitle:NSLocalizedString(@"Confirm", @"") otherButtonTitles:nil, nil];
+                [alert show];
+                break;
+            }
+            case ReachableViaWiFi: //use wifi network
+            {
+                downloadViewController = [[DownloadViewController alloc] initWithNibName:@"DownloadPanel" bundle:nil];
+                downloadViewController.delegate = self;
+                
+                [[[self parentViewController] view] addSubview:downloadViewController.view];
+                [downloadViewController.view setFrame:CGRectMake(0, 768, downloadViewController.view.frame.size.width, downloadViewController.view.frame.size.height)];
+                
+                [UIView animateWithDuration:1.0 animations:^{
+                    NSLog(@"Animation start....");
+                    [downloadViewController.view setFrame:CGRectMake(0, 0, downloadViewController.view.frame.size.width, downloadViewController.view.frame.size.height)];
+                } completion:^(BOOL finished) {
+                    NSLog(@"Animation done....");
+                }];
+                
+                break;
+            }
+            default:
+                break;
+        }
+        
+    }
+    
+}
+
+-(void)closeButtonClicked
+{
+    if (downloadViewController != nil)
+    {
+        [UIView animateWithDuration:1.0 animations:^{
+            NSLog(@"remove Animation start....");
+            [downloadViewController.view setFrame:CGRectMake(0, 768, downloadViewController.view.frame.size.width, downloadViewController.view.frame.size.height)];
+        } completion:^(BOOL finished) {
+            NSLog(@"remove Animation done....");
+        }];
+        [downloadViewController removeFromParentViewController];
+        downloadViewController = nil;
+    }
+
 }
 
 - (void)didReceiveMemoryWarning

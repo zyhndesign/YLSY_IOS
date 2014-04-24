@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="coRightLabel" destination="Pt2-QH-PDy" id="NBu-g2-paa"/>
                 <outlet property="developerLabel" destination="EUy-0x-s47" id="87n-bJ-95c"/>
+                <outlet property="downloadImage" destination="KhO-hL-Rsp" id="n4u-Wd-8Uk"/>
                 <outlet property="view" destination="KvG-ax-bEd" id="oHy-dR-a0O"/>
             </connections>
         </placeholder>

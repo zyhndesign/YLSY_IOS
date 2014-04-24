@@ -54,6 +54,8 @@
     int humanityYValue;
     int storyYValue;
     int historyYValue;
+    
+    BOOL scrollSign;
 }
 
 @property (nonatomic,strong) IBOutlet UIButton *btnHistory;

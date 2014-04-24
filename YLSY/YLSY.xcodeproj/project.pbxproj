@@ -81,6 +81,8 @@
 		D565F24A18FE8FD1009710AF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D565F24918FE8FD1009710AF /* libsqlite3.0.dylib */; };
 		D59DAEC718FE8EE800B06DD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59DAEC618FE8EE800B06DD8 /* AudioToolbox.framework */; };
 		D59DAEC918FE8F2300B06DD8 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D59DAEC818FE8F2300B06DD8 /* libz.1.2.5.dylib */; };
+		D5C0D7E41908EB2000F8BD12 /* DownloadPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C0D7E31908EB2000F8BD12 /* DownloadPanel.xib */; };
+		D5C0D7E71908ED7800F8BD12 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7E61908ED7800F8BD12 /* DownloadViewController.m */; };
 		D5E178FD19066A630045EA7C /* artifactsbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E178F619066A630045EA7C /* artifactsbackground.png */; };
 		D5E178FE19066A630045EA7C /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E178F719066A630045EA7C /* history.png */; };
 		D5E178FF19066A630045EA7C /* historybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E178F819066A630045EA7C /* historybackground.png */; };
@@ -238,6 +240,9 @@
 		D565F24918FE8FD1009710AF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D59DAEC618FE8EE800B06DD8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D59DAEC818FE8F2300B06DD8 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		D5C0D7E31908EB2000F8BD12 /* DownloadPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadPanel.xib; sourceTree = "<group>"; };
+		D5C0D7E51908ED7800F8BD12 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		D5C0D7E61908ED7800F8BD12 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
 		D5E178F619066A630045EA7C /* artifactsbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artifactsbackground.png; sourceTree = "<group>"; };
 		D5E178F719066A630045EA7C /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 		D5E178F819066A630045EA7C /* historybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historybackground.png; sourceTree = "<group>"; };
@@ -604,6 +609,7 @@
 				D5F55C6B19074AC4004AF33B /* LandscapeBoard.xib */,
 				D5F55C6D19075026004AF33B /* HumanityBoard.xib */,
 				D5F55C6F190757E9004AF33B /* StoryBoard.xib */,
+				D5C0D7E31908EB2000F8BD12 /* DownloadPanel.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -621,6 +627,8 @@
 				D5E1C35C1904F6470019E05B /* StoryViewController.m */,
 				D5E1C35E1904F6580019E05B /* FooterViewController.h */,
 				D5E1C35F1904F6580019E05B /* FooterViewController.m */,
+				D5C0D7E51908ED7800F8BD12 /* DownloadViewController.h */,
+				D5C0D7E61908ED7800F8BD12 /* DownloadViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -748,6 +756,7 @@
 				D52D5DA518FE689C00B8C6B8 /* pic3.png in Resources */,
 				D5E178FF19066A630045EA7C /* historybackground.png in Resources */,
 				D5E1C33D1904CC660019E05B /* Localizable.strings in Resources */,
+				D5C0D7E41908EB2000F8BD12 /* DownloadPanel.xib in Resources */,
 				D52D5DB118FE689C00B8C6B8 /* pic16.png in Resources */,
 				D5E1790219066A630045EA7C /* landscapes.png in Resources */,
 				D52D5DB218FE689C00B8C6B8 /* pic17.png in Resources */,
@@ -779,6 +788,7 @@
 				D52D5D8418FE64E700B8C6B8 /* JSONKeyMapper.m in Sources */,
 				D52D5CBA18FE34C700B8C6B8 /* ViewController.m in Sources */,
 				D52D5D1518FE615300B8C6B8 /* FMDatabase.m in Sources */,
+				D5C0D7E71908ED7800F8BD12 /* DownloadViewController.m in Sources */,
 				D52D5DB718FE6F8300B8C6B8 /* SplashViewController.m in Sources */,
 				D52D5CF218FE5AA100B8C6B8 /* AFHTTPRequestOperationManager.m in Sources */,
 				D52D5CF418FE5AA100B8C6B8 /* AFNetworkReachabilityManager.m in Sources */,

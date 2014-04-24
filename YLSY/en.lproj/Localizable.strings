@@ -11,3 +11,10 @@
 "TopMenuStory"="Story";
 "CopyRight"="@HNID CopyRight";
 "DeveloperCorporation"="develop by zyhndesign";
+"Remind"="remind";
+"Confirm"="confirm";
+"3gwarn"="3G network is not support download!";
+"NetworkUnreachable"="please setting your wifi network!";
+"OfflineCache"="offline cache";
+"Close"="close";
+"Video"="Video";

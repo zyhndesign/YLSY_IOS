@@ -19,6 +19,7 @@
 
 @implementation ViewController
 @synthesize btnHistory, btnHumanity, btnLandscape, btnStory, imgAppLogo,mainScrollView;
+@synthesize landscapeUnderline, historyUnderline, humanityUnderline, storyUnderline;
 
 - (void)viewDidLoad
 {
@@ -93,6 +94,12 @@
     imgAppLogo.userInteractionEnabled = YES;
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoOnClick)];
     [imgAppLogo addGestureRecognizer:singleTap];
+    
+    [landscapeUnderline setHidden:YES];
+    [humanityUnderline setHidden:YES];
+    [storyUnderline setHidden:YES];
+    
+    scrollSign = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -109,26 +116,42 @@
 - (IBAction)btnHistoryClick:(id)sender
 {
     [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, historyYValue) animated:YES];
+    
+    [self programaUnderlineOperation:sender];
 }
 
 - (IBAction)btnLandscapeClick:(id)sender
 {
     [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, landscapeYValue) animated:YES];
+    [self programaUnderlineOperation:sender];
 }
 
 - (IBAction)btnHumanityClick:(id)sender
 {
     [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, humanityYValue) animated:YES];
+    
+    [self programaUnderlineOperation:sender];
 }
 
 - (IBAction)btnStoryClick:(id)sender
 {
     [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, storyYValue) animated:YES];
+    [self programaUnderlineOperation:sender];
 }
 
 -(void)logoOnClick
 {
     [mainScrollView setContentOffset:CGPointMake(mainScrollView.frame.origin.x, 0) animated:YES];
+}
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    scrollSign = YES;
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    scrollSign = NO;
 }
 
 -(void)programaUnderlineOperation:(UIButton *) btn
@@ -153,23 +176,27 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)_scrollView
 {
-    CGFloat offsetY = _scrollView.contentOffset.y;
-    
-    if (offsetY >= historyYValue && offsetY < landscapeYValue)
+    if (scrollSign)
     {
-        [self setUnderLineSelectState:YES Landscape:NO Humanity:NO Story:NO];
-    }
-    else if (offsetY >= landscapeYValue && offsetY < humanityYValue)
-    {
-        [self setUnderLineSelectState:NO Landscape:YES Humanity:NO Story:NO];
-    }
-    else if (offsetY >= humanityYValue && offsetY < storyYValue)
-    {
-        [self setUnderLineSelectState:NO Landscape:NO Humanity:YES Story:NO];
-    }
-    else if (offsetY >= storyYValue)
-    {
-        [self setUnderLineSelectState:NO Landscape:NO Humanity:NO Story:YES];
+        CGFloat offsetY = _scrollView.contentOffset.y;
+        
+        if (offsetY >= historyYValue && offsetY < landscapeYValue)
+        {
+            [self setUnderLineSelectState:YES Landscape:NO Humanity:NO Story:NO];
+        }
+        else if (offsetY >= landscapeYValue && offsetY < humanityYValue)
+        {
+            [self setUnderLineSelectState:NO Landscape:YES Humanity:NO Story:NO];
+        }
+        else if (offsetY >= humanityYValue && offsetY < storyYValue)
+        {
+            [self setUnderLineSelectState:NO Landscape:NO Humanity:YES Story:NO];
+        }
+        else if (offsetY >= storyYValue)
+        {
+            [self setUnderLineSelectState:NO Landscape:NO Humanity:NO Story:YES];
+        }
+
     }
     
 }
@@ -186,24 +213,21 @@
         [humanityUnderline setHidden:YES];
         [storyUnderline setHidden:YES];
     }
-    
-    if (landscapeUnderlineState && landscapeUnderline != nil)
+    else if (landscapeUnderlineState && landscapeUnderline != nil)
     {
         [historyUnderline setHidden:YES];
         [landscapeUnderline setHidden:NO];
         [humanityUnderline setHidden:YES];
         [storyUnderline setHidden:YES];
     }
-    
-    if (humanityUnderlineState && humanityUnderline != nil)
+    else if (humanityUnderlineState && humanityUnderline != nil)
     {
         [historyUnderline setHidden:YES];
         [landscapeUnderline setHidden:YES];
         [humanityUnderline setHidden:NO];
         [storyUnderline setHidden:YES];
     }
-    
-    if (storyUnderlineState && storyUnderline != nil)
+    else if (storyUnderlineState && storyUnderline != nil)
     {
         [historyUnderline setHidden:YES];
         [landscapeUnderline setHidden:YES];
