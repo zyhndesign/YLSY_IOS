@@ -7,7 +7,7 @@
 //
 
 #import "StoryViewController.h"
-#import "UIImageView+ImageUtils.h"
+#import "StoryBoardViewController.h"
 
 @interface StoryViewController ()
 
@@ -128,46 +128,22 @@
 {
     NSLog(@"story add view with ID: %i",(pageNum));
     
-    NSBundle *bundle = [NSBundle mainBundle];
-    //NSMutableArray * muArray = [db getLandscapeDataByPage:pageNum];
-    
     CGRect frame;
-    UIView *subview = [[bundle loadNibNamed:@"StoryBoard" owner:self options:nil] lastObject];
-    subview.backgroundColor = [UIColor clearColor];
+    StoryBoardViewController *storyBoardViewController = [[StoryBoardViewController new] initWithNibName:@"StoryBoard" bundle:nil];
+    
+    [self addChildViewController:storyBoardViewController];
+    
+    storyBoardViewController.view.backgroundColor = [UIColor clearColor];
     
     frame.origin.x = self.storyScrollView.frame.size.width * (pageNum);
-    frame.origin.y = 0;
+    frame.origin.y = 20;
     frame.size.width = self.storyScrollView.frame.size.width;
-    frame.size.height = subview.frame.size.height;
-    if (subview != nil)
-    {
-        //UIControl *firstPanel = (UIControl*)[subview viewWithTag:318];
-        //UIControl *secondPanel = (UIControl*)[subview viewWithTag:319];
-        //UIControl *thirdPanel = (UIControl*)[subview viewWithTag:320];
-        //UIControl *fourPanel = (UIControl*)[subview viewWithTag:321];
-        subview.frame = frame;
-        
-        UIImageView *firstImg = (UIImageView *)[subview viewWithTag:501];
-        UIImageView *secondImg = (UIImageView *)[subview viewWithTag:505];
-        UIImageView *thirdImg = (UIImageView *)[subview viewWithTag:510];
-        UIImageView *fourImg = (UIImageView *)[subview viewWithTag:515];
-        UIImageView *fiveImg = (UIImageView *)[subview viewWithTag:520];
-        UIImageView *sixImg = (UIImageView *)[subview viewWithTag:525];
-        UIImageView *sevenImg = (UIImageView *)[subview viewWithTag:530];
-        UIImageView *eightImg = (UIImageView *)[subview viewWithTag:535];
-        [firstImg addFrameWithImage];
-        [secondImg addFrameWithImage];
-        [thirdImg addFrameWithImage];
-        [fourImg addFrameWithImage];
-        [fiveImg addFrameWithImage];
-        [sixImg addFrameWithImage];
-        [sevenImg addFrameWithImage];
-        [eightImg addFrameWithImage];
-        
-        [self.storyScrollView addSubview:subview];
-        
-        [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];
-    }
+    frame.size.height = storyBoardViewController.view.frame.size.height;
+    
+    storyBoardViewController.view.frame = frame;
+    [self.storyScrollView addSubview:storyBoardViewController.view];
+    [muDistionary setObject:storyBoardViewController.view forKey:[NSNumber  numberWithInt:(pageNum)]];
+    
 }
 
 - (void)didReceiveMemoryWarning

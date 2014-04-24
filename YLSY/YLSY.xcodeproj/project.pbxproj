@@ -85,6 +85,9 @@
 		D5C0D7E71908ED7800F8BD12 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7E61908ED7800F8BD12 /* DownloadViewController.m */; };
 		D5C0D7ED190904CA00F8BD12 /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7EA190904CA00F8BD12 /* MJPopupBackgroundView.m */; };
 		D5C0D7EE190904CA00F8BD12 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7EC190904CA00F8BD12 /* UIViewController+MJPopupViewController.m */; };
+		D5C0D7F119090D9A00F8BD12 /* LandscapeBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7F019090D9A00F8BD12 /* LandscapeBoardViewController.m */; };
+		D5C0D7F419090FA400F8BD12 /* HumanityBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7F319090FA400F8BD12 /* HumanityBoardViewController.m */; };
+		D5C0D7F719090FCE00F8BD12 /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C0D7F619090FCE00F8BD12 /* StoryBoardViewController.m */; };
 		D5E178FD19066A630045EA7C /* artifactsbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E178F619066A630045EA7C /* artifactsbackground.png */; };
 		D5E178FE19066A630045EA7C /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E178F719066A630045EA7C /* history.png */; };
 		D5E178FF19066A630045EA7C /* historybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E178F819066A630045EA7C /* historybackground.png */; };
@@ -249,6 +252,12 @@
 		D5C0D7EA190904CA00F8BD12 /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
 		D5C0D7EB190904CA00F8BD12 /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
 		D5C0D7EC190904CA00F8BD12 /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+		D5C0D7EF19090D9A00F8BD12 /* LandscapeBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeBoardViewController.h; sourceTree = "<group>"; };
+		D5C0D7F019090D9A00F8BD12 /* LandscapeBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeBoardViewController.m; sourceTree = "<group>"; };
+		D5C0D7F219090FA400F8BD12 /* HumanityBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanityBoardViewController.h; sourceTree = "<group>"; };
+		D5C0D7F319090FA400F8BD12 /* HumanityBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanityBoardViewController.m; sourceTree = "<group>"; };
+		D5C0D7F519090FCE00F8BD12 /* StoryBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardViewController.h; sourceTree = "<group>"; };
+		D5C0D7F619090FCE00F8BD12 /* StoryBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardViewController.m; sourceTree = "<group>"; };
 		D5E178F619066A630045EA7C /* artifactsbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artifactsbackground.png; sourceTree = "<group>"; };
 		D5E178F719066A630045EA7C /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 		D5E178F819066A630045EA7C /* historybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historybackground.png; sourceTree = "<group>"; };
@@ -647,6 +656,12 @@
 				D5E1C35F1904F6580019E05B /* FooterViewController.m */,
 				D5C0D7E51908ED7800F8BD12 /* DownloadViewController.h */,
 				D5C0D7E61908ED7800F8BD12 /* DownloadViewController.m */,
+				D5C0D7EF19090D9A00F8BD12 /* LandscapeBoardViewController.h */,
+				D5C0D7F019090D9A00F8BD12 /* LandscapeBoardViewController.m */,
+				D5C0D7F219090FA400F8BD12 /* HumanityBoardViewController.h */,
+				D5C0D7F319090FA400F8BD12 /* HumanityBoardViewController.m */,
+				D5C0D7F519090FCE00F8BD12 /* StoryBoardViewController.h */,
+				D5C0D7F619090FCE00F8BD12 /* StoryBoardViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -804,7 +819,9 @@
 				D5E1C35D1904F6470019E05B /* StoryViewController.m in Sources */,
 				D5E1C3571904F6210019E05B /* LandscapeViewController.m in Sources */,
 				D52D5CF118FE5AA100B8C6B8 /* AFHTTPRequestOperation.m in Sources */,
+				D5C0D7F419090FA400F8BD12 /* HumanityBoardViewController.m in Sources */,
 				D52D5D8418FE64E700B8C6B8 /* JSONKeyMapper.m in Sources */,
+				D5C0D7F119090D9A00F8BD12 /* LandscapeBoardViewController.m in Sources */,
 				D52D5CBA18FE34C700B8C6B8 /* ViewController.m in Sources */,
 				D52D5D1518FE615300B8C6B8 /* FMDatabase.m in Sources */,
 				D5C0D7E71908ED7800F8BD12 /* DownloadViewController.m in Sources */,
@@ -817,6 +834,7 @@
 				D52D5D1618FE615300B8C6B8 /* FMDatabaseAdditions.m in Sources */,
 				D52D5CF818FE5AA100B8C6B8 /* AFURLResponseSerialization.m in Sources */,
 				D5F55C741907BCAB004AF33B /* UIImageView+ImageUtils.m in Sources */,
+				D5C0D7F719090FCE00F8BD12 /* StoryBoardViewController.m in Sources */,
 				D52D5D8018FE64E700B8C6B8 /* NSArray+JSONModel.m in Sources */,
 				D52D5D7D18FE64E700B8C6B8 /* JSONModelArray.m in Sources */,
 				D53067AE18FE9263003D84ED /* unzip.c in Sources */,

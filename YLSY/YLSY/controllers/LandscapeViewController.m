@@ -7,6 +7,7 @@
 //
 
 #import "LandscapeViewController.h"
+#import "LandscapeBoardViewController.h"
 
 @interface LandscapeViewController ()
 
@@ -104,27 +105,25 @@
 {
     NSLog(@"landscape add view with ID: %i",(pageNum));
     
-    NSBundle *bundle = [NSBundle mainBundle];
+    //NSBundle *bundle = [NSBundle mainBundle];
     //NSMutableArray * muArray = [db getLandscapeDataByPage:pageNum];
     
     CGRect frame;
-    UIView *subview = [[bundle loadNibNamed:@"LandscapeBoard" owner:self options:nil] lastObject];
-    subview.backgroundColor = [UIColor clearColor];
+    LandscapeBoardViewController *landscapeBoardViewController = [[LandscapeBoardViewController new] initWithNibName:@"LandscapeBoard" bundle:nil];
+    
+    [self addChildViewController:landscapeBoardViewController];
+    
+    landscapeBoardViewController.view.backgroundColor = [UIColor clearColor];
     
     frame.origin.x = self.landscapeScrollView.frame.size.width * (pageNum);
     frame.origin.y = 20;
     frame.size.width = self.landscapeScrollView.frame.size.width;
-    frame.size.height = subview.frame.size.height;
-    if (subview != nil)
-    {
-        //UIControl *firstPanel = (UIControl*)[subview viewWithTag:318];
-        //UIControl *secondPanel = (UIControl*)[subview viewWithTag:319];
-        //UIControl *thirdPanel = (UIControl*)[subview viewWithTag:320];
-        //UIControl *fourPanel = (UIControl*)[subview viewWithTag:321];
-        subview.frame = frame;
-        [self.landscapeScrollView addSubview:subview];
-        [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];
-    }
+    frame.size.height = landscapeBoardViewController.view.frame.size.height;
+    
+    landscapeBoardViewController.view.frame = frame;
+    [self.landscapeScrollView addSubview:landscapeBoardViewController.view];
+    [muDistionary setObject:landscapeBoardViewController.view forKey:[NSNumber  numberWithInt:(pageNum)]];
+    
 }
 
 -(void) removeOldModelInScrollView:(int)pageNum

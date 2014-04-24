@@ -7,7 +7,7 @@
 //
 
 #import "HumanityViewController.h"
-#import "UIImageView+ImageUtils.h"
+#import "HumanityBoardViewController.h"
 
 @interface HumanityViewController ()
 
@@ -103,37 +103,21 @@
 {
     NSLog(@"humanity add view with ID: %i",(pageNum));
     
-    NSBundle *bundle = [NSBundle mainBundle];
-    //NSMutableArray * muArray = [db getLandscapeDataByPage:pageNum];
-    
     CGRect frame;
-    UIView *subview = [[bundle loadNibNamed:@"HumanityBoard" owner:self options:nil] lastObject];
-    subview.backgroundColor = [UIColor clearColor];
+    HumanityBoardViewController *humanityBoardViewController = [[HumanityBoardViewController new] initWithNibName:@"HumanityBoard" bundle:nil];
+    
+    [self addChildViewController:humanityBoardViewController];
+    
+    humanityBoardViewController.view.backgroundColor = [UIColor clearColor];
     
     frame.origin.x = self.humanityScrollView.frame.size.width * (pageNum);
-    frame.origin.y = 0;
+    frame.origin.y = 20;
     frame.size.width = self.humanityScrollView.frame.size.width;
-    frame.size.height = subview.frame.size.height;
-    if (subview != nil)
-    {
-        //UIControl *firstPanel = (UIControl*)[subview viewWithTag:318];
-        //UIControl *secondPanel = (UIControl*)[subview viewWithTag:319];
-        //UIControl *thirdPanel = (UIControl*)[subview viewWithTag:320];
-        //UIControl *fourPanel = (UIControl*)[subview viewWithTag:321];
-        
-        UIImageView *firstImage = (UIImageView *)[subview viewWithTag:401];
-        UIImageView *secondImage = (UIImageView *)[subview viewWithTag:411];
-        UIImageView *thirdImage = (UIImageView *)[subview viewWithTag:421];
-        
-        [firstImage addFrameWithImage];
-        [secondImage addFrameWithImage];
-        [thirdImage addFrameWithImage];
-        
-        subview.frame = frame;
-        [self.humanityScrollView addSubview:subview];
-        
-        [muDistionary setObject:subview forKey:[NSNumber  numberWithInt:(pageNum)]];
-    }
+    frame.size.height = humanityBoardViewController.view.frame.size.height;
+    
+    humanityBoardViewController.view.frame = frame;
+    [self.humanityScrollView addSubview:humanityBoardViewController.view];
+    [muDistionary setObject:humanityBoardViewController.view forKey:[NSNumber  numberWithInt:(pageNum)]];
 }
 
 -(void) removeOldModelInScrollView:(int)pageNum

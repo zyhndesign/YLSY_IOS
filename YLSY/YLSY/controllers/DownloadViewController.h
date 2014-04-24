@@ -20,6 +20,7 @@
     IBOutlet UILabel *downloadTitle;
     IBOutlet UIButton *downloadCloseBtn;
     
+    IBOutlet UIView *popView;
     /**
      *  first column title
      */
@@ -52,6 +53,7 @@
 @property (strong, nonatomic) IBOutlet UIView *downloadBg;
 @property (strong, nonatomic) IBOutlet UILabel *downloadTitle;
 @property (strong, nonatomic) IBOutlet UIButton *downloadCloseBtn;
+@property (strong, nonatomic) IBOutlet UIView *popView;
 
 @property (strong, nonatomic) IBOutlet UILabel *videoLabel;
 @property (strong, nonatomic) IBOutlet UILabel *historyLabel;

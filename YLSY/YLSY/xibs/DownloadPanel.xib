@@ -18,6 +18,7 @@
                 <outlet property="landscapeDwnResult" destination="qFg-9Q-Umw" id="COi-Xy-ffX"/>
                 <outlet property="landscapeLabel" destination="YHW-5Z-sxq" id="xrP-k6-Rbw"/>
                 <outlet property="landscapeProgress" destination="lFM-Hm-nrb" id="rav-Pu-Vtt"/>
+                <outlet property="popView" destination="U4s-wd-j0q" id="Xs8-eP-SDi"/>
                 <outlet property="storyDwnResult" destination="RJD-fu-qH6" id="3YY-Ts-IiN"/>
                 <outlet property="storyLabel" destination="2vL-FK-mQ1" id="eAg-0V-Fr9"/>
                 <outlet property="storyProgress" destination="P4A-vc-8a8" id="PPF-BX-kh4"/>

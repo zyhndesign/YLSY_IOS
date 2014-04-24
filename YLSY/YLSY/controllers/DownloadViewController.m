@@ -13,7 +13,7 @@
 @end
 
 @implementation DownloadViewController
-@synthesize downloadBg, downloadCloseBtn, downloadTitle;
+@synthesize downloadBg, popView, downloadCloseBtn, downloadTitle;
 @synthesize videoLabel, historyLabel, landscapeLabel, humanityLabel, storyLabel;
 @synthesize videoDwnResult, historyDwnResult, landscapeDwnResult, humanityDwnResult, storyDwnResult;
 @synthesize videoProgress, historyProgress, storyProgress,landscapeProgress,humanityProgress;
@@ -33,6 +33,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     downloadBg.backgroundColor = [UIColor clearColor];
+    popView.layer.cornerRadius = 5;
+    popView.layer.masksToBounds = YES;
+    
     [downloadTitle setText:NSLocalizedString(@"OfflineCache", @"")];
     [downloadCloseBtn setTitle:NSLocalizedString(@"Close", @"") forState:UIControlStateNormal];
     
