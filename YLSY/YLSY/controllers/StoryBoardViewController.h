@@ -18,6 +18,15 @@
     IBOutlet UIImageView *sixImg;
     IBOutlet UIImageView *sevenImg;
     IBOutlet UIImageView *eightImg;
+    
+    IBOutlet UIView *firstView;
+    IBOutlet UIView *secondView;
+    IBOutlet UIView *threeView;
+    IBOutlet UIView *fourView;
+    IBOutlet UIView *fiveView;
+    IBOutlet UIView *sixView;
+    IBOutlet UIView *sevenView;
+    IBOutlet UIView *eightView;
 }
 @property (strong, nonatomic) IBOutlet UIImageView *firstImg;
 @property (strong, nonatomic) IBOutlet UIImageView *secondImg;
@@ -28,4 +37,13 @@
 @property (strong, nonatomic) IBOutlet UIImageView *sevenImg;
 @property (strong, nonatomic) IBOutlet UIImageView *eightImg;
 
+
+@property (strong, nonatomic) IBOutlet UIView *firstView;
+@property (strong, nonatomic) IBOutlet UIView *secondView;
+@property (strong, nonatomic) IBOutlet UIView *threeView;
+@property (strong, nonatomic) IBOutlet UIView *fourView;
+@property (strong, nonatomic) IBOutlet UIView *fiveView;
+@property (strong, nonatomic) IBOutlet UIView *sixView;
+@property (strong, nonatomic) IBOutlet UIView *sevenView;
+@property (strong, nonatomic) IBOutlet UIView *eightView;
 @end

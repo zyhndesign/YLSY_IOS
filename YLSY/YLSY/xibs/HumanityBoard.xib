@@ -6,39 +6,56 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanityBoardViewController">
             <connections>
+                <outlet property="firstLabel1" destination="0z1-e8-KcC" id="CHZ-pA-7k1"/>
+                <outlet property="firstLabel2" destination="gUD-L0-0Sg" id="n4u-gJ-1vG"/>
+                <outlet property="firstLabel3" destination="mBD-j3-Orx" id="qwa-uQ-6fa"/>
+                <outlet property="firstView" destination="NLq-Xu-Qfh" id="AzS-o4-0sZ"/>
                 <outlet property="firstimg" destination="adg-Ut-sH8" id="vvn-YQ-l9v"/>
+                <outlet property="fourImg" destination="C4M-0i-GS6" id="WkG-AY-KmM"/>
+                <outlet property="fourLabel1" destination="DBS-eS-qGD" id="Sji-2C-uaa"/>
+                <outlet property="fourLabel2" destination="pNC-5W-MFR" id="HYY-Bf-jRb"/>
+                <outlet property="fourLabel3" destination="GNh-kb-W8T" id="g7h-fp-BeN"/>
+                <outlet property="fourView" destination="BMz-Lh-9I0" id="f9d-w5-Sqk"/>
                 <outlet property="secondImg" destination="Y2D-SQ-d2w" id="NYt-qA-Gdc"/>
+                <outlet property="secondLabel1" destination="oiX-4M-CwJ" id="KaN-B1-ybh"/>
+                <outlet property="secondLabel2" destination="9q3-ii-9lj" id="QiH-pb-KEq"/>
+                <outlet property="secondLabel3" destination="Fpa-ub-jcy" id="XtL-7s-tGS"/>
+                <outlet property="secondView" destination="z7L-uY-Xjs" id="T6B-LS-GBj"/>
                 <outlet property="thirdImg" destination="yJG-jy-qhb" id="pmu-bs-YmR"/>
+                <outlet property="threeLabel1" destination="FVQ-Vb-Lag" id="B60-sq-dcT"/>
+                <outlet property="threeLabel2" destination="Ptb-JI-hLm" id="x4k-6K-hys"/>
+                <outlet property="threeLabel3" destination="3Iv-kH-pPg" id="PYU-X1-UvF"/>
+                <outlet property="threeView" destination="RyT-qX-P9y" id="2p1-5Z-FMV"/>
                 <outlet property="view" destination="D9p-Hb-3OA" id="zfO-w6-zJo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="D9p-Hb-3OA">
-            <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
+            <rect key="frame" x="0.0" y="0.0" width="973" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RyT-qX-P9y">
-                    <rect key="frame" x="543" y="5" width="250" height="500"/>
+                    <rect key="frame" x="484" y="5" width="240" height="500"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic9.png" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-jy-qhb">
-                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVQ-Vb-Lag">
-                            <rect key="frame" x="0.0" y="254" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="254" width="230" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptb-JI-hLm">
-                            <rect key="frame" x="0.0" y="280" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="280" width="230" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-kH-pPg">
-                            <rect key="frame" x="0.0" y="309" width="250" height="161"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-kH-pPg">
+                            <rect key="frame" x="0.0" y="319" width="230" height="161"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="highlightedColor"/>
@@ -47,27 +64,27 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-Xu-Qfh">
-                    <rect key="frame" x="6" y="2" width="250" height="500"/>
+                    <rect key="frame" x="6" y="2" width="230" height="500"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic11.png" translatesAutoresizingMaskIntoConstraints="NO" id="adg-Ut-sH8">
-                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z1-e8-KcC">
-                            <rect key="frame" x="0.0" y="262" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="262" width="230" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-L0-0Sg">
-                            <rect key="frame" x="0.0" y="289" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="289" width="230" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-j3-Orx">
-                            <rect key="frame" x="0.0" y="316" width="250" height="161"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-j3-Orx">
+                            <rect key="frame" x="0.0" y="316" width="230" height="151"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="highlightedColor"/>
@@ -76,27 +93,56 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7L-uY-Xjs">
-                    <rect key="frame" x="274" y="2" width="250" height="500"/>
+                    <rect key="frame" x="242" y="2" width="230" height="500"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic8.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-SQ-d2w">
-                            <rect key="frame" x="0.0" y="247" width="250" height="250"/>
+                            <rect key="frame" x="0.0" y="256" width="230" height="230"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-4M-CwJ">
-                            <rect key="frame" x="0.0" y="1" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="5" width="230" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q3-ii-9lj">
-                            <rect key="frame" x="0.0" y="40" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="40" width="230" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="Fpa-ub-jcy">
-                            <rect key="frame" x="0.0" y="77" width="250" height="161"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="Fpa-ub-jcy">
+                            <rect key="frame" x="0.0" y="77" width="230" height="151"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMz-Lh-9I0">
+                    <rect key="frame" x="727" y="0.0" width="230" height="500"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="pic8.png" translatesAutoresizingMaskIntoConstraints="NO" id="C4M-0i-GS6">
+                            <rect key="frame" x="0.0" y="257" width="230" height="230"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBS-eS-qGD">
+                            <rect key="frame" x="0.0" y="5" width="230" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-5W-MFR">
+                            <rect key="frame" x="0.0" y="40" width="230" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="GNh-kb-W8T">
+                            <rect key="frame" x="0.0" y="77" width="230" height="161"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <nil key="highlightedColor"/>

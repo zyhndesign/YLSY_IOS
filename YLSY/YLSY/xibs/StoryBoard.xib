@@ -7,13 +7,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryBoardViewController">
             <connections>
                 <outlet property="eightImg" destination="lab-ss-Xhl" id="t7B-FN-xbS"/>
+                <outlet property="eightView" destination="X3i-K2-cez" id="b2c-t7-Jfv"/>
                 <outlet property="firstImg" destination="HuQ-AQ-TBZ" id="p97-Ft-pUY"/>
+                <outlet property="firstView" destination="VLo-6Q-xdX" id="nQm-W5-aOe"/>
                 <outlet property="fiveImg" destination="S91-51-gJ2" id="lR5-ip-zZ9"/>
+                <outlet property="fiveView" destination="wWi-8p-EaA" id="2t3-jG-CcJ"/>
                 <outlet property="fourImg" destination="G4g-tQ-Coy" id="q6z-el-iaE"/>
+                <outlet property="fourView" destination="VRY-5h-ES9" id="tbh-ux-bGv"/>
                 <outlet property="secondImg" destination="uA5-5I-fny" id="VVw-un-xRP"/>
+                <outlet property="secondView" destination="RVs-XU-bJK" id="OTL-4R-lpg"/>
                 <outlet property="sevenImg" destination="0Hn-nK-p4D" id="kcX-ny-BEw"/>
+                <outlet property="sevenView" destination="qVg-7W-I9V" id="xVh-wx-1rb"/>
                 <outlet property="sixImg" destination="Kqr-pG-DP0" id="dF4-gI-DKd"/>
+                <outlet property="sixView" destination="yjJ-Jc-CFp" id="H7h-kx-i4m"/>
                 <outlet property="thirdImg" destination="Xt2-NM-Am0" id="AXs-V8-LLn"/>
+                <outlet property="threeView" destination="gAS-ck-dfJ" id="iLq-O7-pvw"/>
                 <outlet property="view" destination="JaS-AI-6Vp" id="K7d-dY-ADT"/>
             </connections>
         </placeholder>

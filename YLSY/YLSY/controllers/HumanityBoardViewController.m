@@ -15,7 +15,12 @@
 
 @implementation HumanityBoardViewController
 
-@synthesize firstimg, secondImg, thirdImg;
+@synthesize firstimg, secondImg, thirdImg,  fourImg;
+@synthesize firstView, secondView, threeView, fourView;
+@synthesize firstLabel1, firstLabel2, firstLabel3;
+@synthesize secondLabel1, secondLabel2, secondLabel3;
+@synthesize threeLabel1, threeLabel2, threeLabel3;
+@synthesize fourLabel1, fourLabel2, fourLabel3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +38,12 @@
     [firstimg addFrameWithImage];
     [secondImg addFrameWithImage];
     [thirdImg addFrameWithImage];
+    [fourImg addFrameWithImage];
+    
+    firstView.backgroundColor = [UIColor clearColor];
+    secondView.backgroundColor = [UIColor clearColor];
+    threeView.backgroundColor = [UIColor clearColor];
+    fourView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning

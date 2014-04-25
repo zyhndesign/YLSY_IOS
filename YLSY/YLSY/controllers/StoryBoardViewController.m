@@ -18,6 +18,9 @@
 @synthesize firstImg,secondImg,thirdImg,fourImg;
 @synthesize fiveImg,sixImg,sevenImg,eightImg;
 
+@synthesize firstView, secondView, threeView, fourView;
+@synthesize fiveView, sixView, sevenView, eightView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

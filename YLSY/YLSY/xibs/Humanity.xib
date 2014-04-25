@@ -7,9 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanityViewController">
             <connections>
                 <outlet property="bgHumanityView" destination="17L-Bh-7fD" id="VSA-Zb-oG1"/>
-                <outlet property="humanityLeftImg" destination="2UZ-9r-fQK" id="E3y-EL-uLb"/>
                 <outlet property="humanityPageControll" destination="L0i-KS-bd8" id="a3m-vS-YTh"/>
-                <outlet property="humanityRightImg" destination="oCp-m1-9xn" id="HBs-Dl-h7H"/>
                 <outlet property="humanityScrollView" destination="Nud-2f-fdU" id="P56-W3-G28"/>
                 <outlet property="view" destination="DXa-1x-cgr" id="XMO-dp-3if"/>
             </connections>
@@ -35,19 +33,19 @@
                     <rect key="frame" x="0.0" y="685" width="1024" height="684"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leftpeachflower.png" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-Ot-QfP">
+                            <rect key="frame" x="0.0" y="110" width="386" height="465"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rightpeachflower.png" translatesAutoresizingMaskIntoConstraints="NO" id="drq-AQ-T6b">
+                            <rect key="frame" x="512" y="37" width="518" height="627"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nud-2f-fdU">
-                            <rect key="frame" x="105" y="78" width="810" height="507"/>
+                            <rect key="frame" x="24" y="78" width="976" height="507"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </scrollView>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="leftarrow" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-9r-fQK">
-                            <rect key="frame" x="37" y="328" width="36" height="36"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-m1-9xn">
-                            <rect key="frame" x="954" y="328" width="36" height="36"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
                         <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="L0i-KS-bd8">
                             <rect key="frame" x="412" y="613" width="200" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,7 +67,7 @@
         <image name="downarrow" width="44" height="46"/>
         <image name="humanity.png" width="1022" height="684"/>
         <image name="humanitylogo" width="382" height="261"/>
-        <image name="leftarrow" width="36" height="36"/>
-        <image name="rightarrow" width="36" height="36"/>
+        <image name="leftpeachflower.png" width="386" height="465"/>
+        <image name="rightpeachflower.png" width="518" height="627"/>
     </resources>
 </document>

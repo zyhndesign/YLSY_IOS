@@ -6,6 +6,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandscapeBoardViewController">
             <connections>
+                <outlet property="firstImg" destination="P5c-8S-KLq" id="mMB-3n-gJP"/>
+                <outlet property="firstLabel" destination="1YM-nC-9Ry" id="qcz-jE-Hwr"/>
+                <outlet property="firstView" destination="7HT-Gb-YYz" id="7Dj-H2-pcO"/>
+                <outlet property="fiveImg" destination="poI-os-LDD" id="CaG-dy-WrX"/>
+                <outlet property="fiveLabel" destination="VrP-l8-T8f" id="eIC-cK-TzD"/>
+                <outlet property="fourImg" destination="ggT-x5-UoD" id="Uw9-hs-5XF"/>
+                <outlet property="fourLabel" destination="HCg-q4-PuO" id="4Cr-Oa-PWk"/>
+                <outlet property="fourView" destination="Qgo-w0-ukv" id="Lig-du-hzh"/>
+                <outlet property="secondImg" destination="Jn1-NF-HYl" id="AML-xQ-ZlM"/>
+                <outlet property="secondLabel" destination="5MN-v4-8jL" id="pMu-eb-hDT"/>
+                <outlet property="secondView" destination="1zZ-0H-nJa" id="K75-Aq-PJU"/>
+                <outlet property="threeImg" destination="jxO-6c-ADt" id="W3u-l9-dhM"/>
+                <outlet property="threeLabel" destination="g9C-y6-JIw" id="Hst-Ty-oIg"/>
+                <outlet property="threeView" destination="1gg-va-ecn" id="RPd-wr-OgI"/>
                 <outlet property="view" destination="xVD-VC-dJa" id="YOM-1L-mcW"/>
             </connections>
         </placeholder>
