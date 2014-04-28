@@ -8,8 +8,10 @@
 
 #import "HumanityBoardViewController.h"
 #import "UIImageView+ImageUtils.h"
+#import "DetailViewController.h"
+#import "../libs/MJPopup/UIViewController+MJPopupViewController.h"
 
-@interface HumanityBoardViewController ()
+@interface HumanityBoardViewController ()<MJPopupDelegate>
 
 @end
 
@@ -21,6 +23,8 @@
 @synthesize secondLabel1, secondLabel2, secondLabel3;
 @synthesize threeLabel1, threeLabel2, threeLabel3;
 @synthesize fourLabel1, fourLabel2, fourLabel3;
+
+extern DetailViewController *detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,6 +48,22 @@
     secondView.backgroundColor = [UIColor clearColor];
     threeView.backgroundColor = [UIColor clearColor];
     fourView.backgroundColor = [UIColor clearColor];
+}
+
+- (void)panelClick:(id)sender
+{
+    if (detailViewController == nil)
+    {
+        detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailPanel" bundle:nil articleId:[sender accessibilityLabel]];
+        detailViewController.delegate = self;
+        [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationSlideRightLeft];
+    }
+}
+
+- (void) closeButtonClicked
+{
+    [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationSlideLeftRight];
+    detailViewController = nil;
 }
 
 - (void)didReceiveMemoryWarning

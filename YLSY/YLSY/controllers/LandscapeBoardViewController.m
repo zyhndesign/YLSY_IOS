@@ -7,12 +7,22 @@
 //
 
 #import "LandscapeBoardViewController.h"
+#import "DetailViewController.h"
+#import "../libs/MJPopup/UIViewController+MJPopupViewController.h"
 
-@interface LandscapeBoardViewController ()
+@interface LandscapeBoardViewController ()<MJPopupDelegate>
 
 @end
 
 @implementation LandscapeBoardViewController
+
+@synthesize firstImg, firstLabel, firstView;
+@synthesize secondImg, secondLabel, secondView;
+@synthesize threeImg, threeLabel, threeView;
+@synthesize fourImg, fourLabel, fourView;
+@synthesize fiveImg, fiveLabel, fiveView;
+
+extern DetailViewController *detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,4 +56,19 @@
 }
 */
 
+- (void)panelClick:(id)sender
+{
+    if (detailViewController == nil)
+    {
+        detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailPanel" bundle:nil articleId:[sender accessibilityLabel]];
+        detailViewController.delegate = self;
+        [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationSlideRightLeft];
+    }
+}
+
+- (void) closeButtonClicked
+{
+    [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationSlideLeftRight];
+    detailViewController = nil;
+}
 @end

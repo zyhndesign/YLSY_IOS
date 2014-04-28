@@ -8,8 +8,10 @@
 
 #import "StoryBoardViewController.h"
 #import "UIImageView+ImageUtils.h"
+#import "DetailViewController.h"
+#import "../libs/MJPopup/UIViewController+MJPopupViewController.h"
 
-@interface StoryBoardViewController ()
+@interface StoryBoardViewController ()<MJPopupDelegate>
 
 @end
 
@@ -20,6 +22,8 @@
 
 @synthesize firstView, secondView, threeView, fourView;
 @synthesize fiveView, sixView, sevenView, eightView;
+
+extern DetailViewController *detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,6 +46,22 @@
     [fourImg addFrameWithImage];
     [sixImg addFrameWithImage];
     [eightImg addFrameWithImage];
+}
+
+- (void)panelClick:(id)sender
+{
+    if (detailViewController == nil)
+    {
+        detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailPanel" bundle:nil articleId:[sender accessibilityLabel]];
+        detailViewController.delegate = self;
+        [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationSlideRightLeft];
+    }
+}
+
+- (void) closeButtonClicked
+{
+    [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationSlideLeftRight];
+    detailViewController = nil;
 }
 
 - (void)didReceiveMemoryWarning

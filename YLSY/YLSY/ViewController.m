@@ -12,6 +12,8 @@
 #import "controllers/HumanityViewController.h"
 #import "controllers/StoryViewController.h"
 #import "controllers/FooterViewController.h"
+#import "libs/MJPopup/UIViewController+MJPopupViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -21,8 +23,11 @@
 @synthesize btnHistory, btnHumanity, btnLandscape, btnStory, imgAppLogo,mainScrollView;
 @synthesize landscapeUnderline, historyUnderline, humanityUnderline, storyUnderline;
 
+DetailViewController *detailViewController;
+
 - (void)viewDidLoad
 {
+    NSLog(@"View did load");
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
@@ -102,9 +107,28 @@
     scrollSign = NO;
 }
 
+-(void)viewDidDisappear:(BOOL)animated
+{
+    NSLog(@"view did disappear");
+    [super viewDidDisappear:animated];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"view did appear");
+    [super viewDidAppear:animated];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.screenName = @"Home Screen";
+    NSLog(@"view will appear");
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"view will disappear");
 }
 
 - (void)didReceiveMemoryWarning
